@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>欧洲伽利略全球卫星导航系统发展前瞻</strong>_天津大学遥感研究中心</title>
+  <meta name="keywords" content="遥感与数字地球、数字地" />
+  <meta name="description" content="中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机" />
+  <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+  <script language="javascript" type="text/javascript">
+  <!--
+  function CheckLogin(){
+   var taget_obj = document.getElementById('_ajax_feedback');
+   myajax = new DedeAjax(taget_obj,false,false,'','','');
+   myajax.SendGet2("/member/ajax_feedback.php");
+   DedeXHTTP = null;
+ }
+ function postBadGood(ftype,fid)
+ {
+   var taget_obj = document.getElementById(ftype+fid);
+   var saveid = GetCookie('badgoodid');
+   if(saveid != null)
+   {
+    var saveids = saveid.split(',');
+    var hasid = false;
+    saveid = '';
+    j = 1;
+    for(i=saveids.length-1;i>=0;i--)
+    {
+     if(saveids[i]==fid && hasid) continue;
+     else {
+      if(saveids[i]==fid && !hasid) hasid = true;
+      saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+      j++;
+      if(j==10 && hasid) break;
+      if(j==9 && !hasid) break;
+    }
+  }
+  if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+  else saveid += ','+fid;
+  SetCookie('badgoodid',saveid,1);
+}
+else
+{
+  SetCookie('badgoodid',fid,1);
+}
+myajax = new DedeAjax(taget_obj,false,false,'','','');
+myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/templets/default/style/global.css" />
+<link rel="stylesheet" type="text/css" href="/templets/default/style/header.css" />
+<title>天津大学遥感研究中心</title>
+<script type="text/javascript" src="/templets/default/js/settab.js"></script>
+</head>
+<body>
+<!--header begin-->
+<div class="header">
+ <div class="wrap">
+  <a  title="" target="_blank"><img src="/templets/default/images/ad1.jpg" width="1004" height="40" /></a>
+  <div class="search_box">
+   <a  title="" target="_blank"><img src="/templets/default/images/logo1.jpg" width="1002" height="97"  alt="" class="fl"/></a>
+   <div class="cb"></div>
+ <a style="margin-left:940px;" href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)" style="position:relative;top:-40px;font-size:15px;"><span>收藏本站</span></a>
+  </div>
+ </div>
+ <div class="nav"style="width:1004px">
+  <div class="wrap">
+      <a id="a1" style="color: #fff;font-size: 12px;font-weight:bold;line-height: 32px;"href="/a/en">EnglishView</a>
+   <ul class="nav_left">
+
+<li><a href='/'><span>主页</span></a></li>
+        <!-- 
+        <li><a href='/a/zh/zhongxinjianjie/index.html' ><span>中心简介</span></a></li>
+        
+        <li><a href='/a/zh/yanjiuduiwu/index.html' ><span>研究队伍</span></a></li>
+        
+        <li><a href='/a/zh/yanjiufangxiang/index.html' ><span>研究方向</span></a></li>
+        
+        <li><a href='/a/zh/xueshuweiyuanhui/index.html' ><span>学术委员会</span></a></li>
+        
+        <li><a href='/a/zh/hezuojiaoliu/index.html' ><span>合作交流</span></a></li>
+        
+        <li><a href='/a/zh/yanjiudongtai/index.html' ><span>研究动态</span></a></li>
+        
+        <li><a href='/a/zh/rencaizhaopin/index.html' ><span>人才招聘</span></a></li>
+        
+        <li><a href='/a/zh/lianxiwomen/index.html' ><span>联系我们</span></a></li>
+         -->
+         <li><a href='/plus/list.php?tid=11'><span>中心简介</span></a></li><li><a href='/plus/list.php?tid=12'><span>研究方向</span></a></li><li><a href='/plus/list.php?tid=13'><span>学术委员会</span></a></li><li><a href='/plus/list.php?tid=14'><span>研究队伍</span></a></li><li><a href='/plus/list.php?tid=15'><span>研究动态</span></a></li><li><a href='/plus/list.php?tid=17'><span>合作交流</span></a></li><li><a href='/plus/list.php?tid=18'><span>人才招聘</span></a></li><li><a href='/plus/list.php?tid=19'><span>联系我们</span></a></li> 
+   </ul>
+   
+  </div>
+ </div>
+</div>
+<!--header end-->
+</body>
+</html>
+  <!-- /header -->
+  <div class="w960 center clear mt1">
+    <div class="pleft">
+     <div class="place"> <strong>当前位置:</strong> <a href='http://www.cbblab.com/'>主页</a> > <a href='/a/zh/index.html'>中文</a> > <a href='/a/zh/xinwenzhongxin/index.html'>新闻中心</a> >  </div>
+     <!-- /place -->
+     <div class="viewbox">
+      <div class="title">
+       <h2>欧洲伽利略全球卫星导航系统发展前瞻</strong></h2>
+     </div>
+     <!-- /title -->
+     <div class="info"> <small>时间:</small>2014-11-18 01:40<small>来源:</small> <small>作者:</small> <small>点击:</small>
+       <script src="/plus/count.php?view=yes&aid=409&mid=1" type='text/javascript' language="javascript"></script>
+       次</div>
+       <!-- /info 
+       
+       <div class="intro">中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机</div>
+       
+      -->
+       <div class="content">
+         <table width='100%'>
+          <tr>
+           <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+            <div class=TRS_Editor><p align="justify">　　<span>欧洲伽利略全球卫星导航系统将于明年年底前投入试运行。欧盟计划在</span><span>2019</span><span>年完成定位导航系统全部卫星的组网。伽利略系统建成后，将和美国全球定位系统</span><span>(gps)</span><span>、俄罗斯格洛纳斯系统、中国北斗卫星导航系统共同构成全球四大卫星导航系统，为用户提供更加高效和精确的服务。</span>&nbsp;</p><p align="justify">　　<strong><span>定位精度</span></strong><strong><span>10</span></strong><strong><span>米～</span></strong><strong><span>15</span></strong><strong><span>米</span></strong>&nbsp;</p><p align="justify">　　<span>7</span><span>月</span><span>24</span><span>日</span><span>，设在意大利富齐诺的伽利略系统控制中心进行了路演，通过伽利略系统现有的</span><span>4</span><span>颗在轨定位导航卫星，顺利获得高精度三维坐标信息，同时为安装了信号接收器的交通工具提供卫星定位导航服务。</span>&nbsp;</p><p align="justify">　　<span>伽利略系统的建设于</span><span>2002</span><span>年正式启动，总计划投资超过</span><span>11</span><span>亿美元。伽利略系统从启动到实现运营共分</span><span>4</span><span>个阶段，目前处在第三个阶段</span><span>(2011</span><span>年～</span><span>2014</span><span>年</span><span>)</span><span>，即全面部署阶段。该阶段的主要任务是制造和发射正式运行卫星，建成整个地面基础设施。伽利略系统将由</span><span>30</span><span>颗卫星组成，其中</span><span>27</span><span>颗为工作卫星，</span><span>3</span><span>颗为备用卫星，定位导航系统的精度达到</span><span>10</span><span>米～</span><span>15</span><span>米。该系统目前只有</span><span>4</span><span>颗在轨卫星，因此还不能实现</span><span>24</span><span>小时全球定位导航。按照计划，到</span><span>2014</span><span>年完成另外</span><span>14</span><span>颗具有完整功能的卫星发射后，伽利略系统就可以投入运行，提供公开服务、公共管理服务和搜索与营救服务。到</span><span>2019</span><span>年，</span><span>30</span><span>颗卫星全部发射完成，就可以实现全球覆盖。</span>&nbsp;</p><p align="justify">　　<span>目前伽利略系统地面建设已经十分成熟，已有</span><span>3</span><span>个遥测和遥控指挥站投入运营，还有两个将于今年内完工；</span><span>12</span><span>个传感器站已投入使用；</span><span>5</span><span>个导航信息上行站也已建成使用。据介绍，分别建在意大利和德国的两个控制中心也将在</span><span>2014</span><span>年得到进一步完善。</span>&nbsp;</p><p align="justify">　　<strong><span>兼容</span></strong><strong><span>gps</span></strong><strong><span>系统</span></strong>&nbsp;</p><p align="justify">　　<span>伽利略系统对欧盟的重要战略意义不言而喻。它不仅会极大促进欧洲国家的工业发展、拉动就业，而且有助于保证欧洲在太空领域技术和政策的独立性，更被视为欧洲独立防务的重要一步。</span>&nbsp;</p><p align="justify">　　<span>伽利略计划是由欧盟委员会和欧空局共同发起的，目标是建成欧洲自主的民用全球卫星导航系统，并与美国的</span><span>gps</span><span>和俄罗斯的格洛纳斯系统相兼容，从而摆脱对</span><span>gps</span><span>系统的依赖，打破美国对全球卫星导航产业的垄断。与</span><span>gps</span><span>和格洛纳斯系统不同的是，伽利略系统是世界首个非军事目的导航系统，系统建成后将主要为民用交通等领域提供导航服务，而</span><span>gps</span><span>和格洛纳斯系统均为冷战时出于军事目的而进行开发的，之后才逐渐向民用领域敞开大门。</span>&nbsp;</p><p align="justify">　　<span>凭借工业技术领域的优势，意大利在伽利略系统建设工作中发挥了重要作用。已在轨运行的</span><span>4</span><span>颗导航卫星全部由欧洲的泰雷兹</span><span>·</span><span>阿莱尼亚宇航公司组装建造。此外，伽利略系统的控制中心也设在意大利富齐诺航天中心内，将在系统建成后负责导航卫星网络的运营和管理。</span>&nbsp;</p><p align="justify">　　<strong><span>强调系统独立性</span></strong>&nbsp;</p><p align="justify">　　<span>欧盟从一开始接纳非欧洲成员参与此项目，到后来排斥非欧洲国家并强调系统的独立性，表明对自身区域安全有所顾忌。欧盟在发展伽利略系统过程中，由于各种原因在一定程度上表现出了排他性。</span>&nbsp;</p><p align="justify">　　<span>意大利总理莱塔表示，建设伽利略系统这一决策具有很强的前瞻性，将为欧洲空间技术建设提供机会，有助于发展和保护欧盟的自主空间战略。意大利经济发展部长扎诺纳托认为，伽利略系统目前显现出的工作效率极高，这表明欧洲也有能力成为航天技术领域的领军者。</span>&nbsp;</p><p align="justify">　　<span>美国曾试图说服欧盟放弃伽利略计划，参与美国的</span><span>gps</span><span>现代化工程。美国针对伽利略系统提出了频率使用问题、伽利略与</span><span>gps</span><span>的兼容性和互操作性问题、伽利略系统将带来的国家安全问题等等。这些问题的提出，使得欧盟在伽利略计划实施过程中不得不多次与美国协商，以征得美国的同意。</span>&nbsp;</p><p align="justify">　　<span>近年来，欧美在卫星导航系统方面不断整合。</span><span>2007</span><span>年</span><span>7</span><span>月，欧美达成协议，确定了伽利略卫星导航系统和</span><span>gps</span><span>系统民用信号的兼容方案，以便用户获得效果更佳的导航定位服务。</span>&nbsp;</p><p align="justify">　　资料<span>来源：</span></p><p align="justify"><span>&nbsp;&nbsp;&nbsp; </span><span><a href="http://www.cast.cn/CastCn/Show.asp?ArticleID=44677">http://www.cast.cn/CastCn/Show.asp?ArticleID=44677</a></span>&nbsp;</p><p align="justify">　
+            
+            (责任编辑：admin)</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+      <div class="dede_pages">
+       <ul class="pagelist">
+        
+      </ul>
+    </div>
+    <!-- /pages -->
+    <!-- //顶踩 -->
+    <div class="newdigg" id="newdigg">
+     <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',409)">
+      <div class="digg_act">顶一下</div>
+      <div class="digg_num">(0)</div>
+      <div class="digg_percent">
+       <div class="digg_percent_bar"><span style="width:0%"></span></div>
+       <div class="digg_percent_num">0%</div>
+     </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',409)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+   </div>
+ </div>
+</div>
+<script language="javascript" type="text/javascript">getDigg(409);</script>
+<!-- //顶踩部份的源码结束 -->
+<!-- //分享代码开始 -->
+
+<!-- //分享代码结束 -->
+<div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+<div class="handle">
+ <div class="context">
+  <ul>
+   <li>上一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/408.html'>IPCC报告草案更确定人类活动引起气候变化</stro</a> </li>
+   <li>下一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/410.html'>亚洲开发银行发布《亚太地区与气候相关的灾害</a> </li>
+ </ul>
+</div>
+<!-- /context -->
+<!-- <div class="actbox">
+  <ul>
+   <li id="act-fav"><a href="/plus/stow.php?aid=409" target="_blank">收藏</a></li>
+   <li id="act-err"><a href="/plus/erraddsave.php?aid=409&title=欧洲伽利略全球卫星导航系统发展前瞻</strong>" target="_blank">挑错</a></li>
+   <li id="act-pus"><a href="/plus/recommend.php?aid=409" target="_blank">推荐</a></li>
+   <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+ </ul>
+</div> -->
+<!-- /actbox -->
+</div>
+<!-- /handle -->
+</div>
+<!-- /viewbox -->
+<!-- //AJAX评论区 -->
+
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+<!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		<div class="copyright">地址：天津市南开区卫津路92号| 邮编：300072</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

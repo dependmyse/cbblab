@@ -1,0 +1,2 @@
+<h2><a href='/plus/view.php?aid=[field:id/]' target='_blank'>[field:title/]</a></h2>
+        <p>[field:body function=cn_substr(Html2Text(@me),300)/]<a href='/plus/view.php?aid=[field:id/]' target='_blank'>[View]</a></p>

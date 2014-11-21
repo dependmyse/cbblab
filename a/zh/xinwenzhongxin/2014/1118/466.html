@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>美国国家空间数据基础设施战略规划（2014—201_天津大学遥感研究中心</title>
+  <meta name="keywords" content="遥感与数字地球、数字地" />
+  <meta name="description" content="中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机" />
+  <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+  <script language="javascript" type="text/javascript">
+  <!--
+  function CheckLogin(){
+   var taget_obj = document.getElementById('_ajax_feedback');
+   myajax = new DedeAjax(taget_obj,false,false,'','','');
+   myajax.SendGet2("/member/ajax_feedback.php");
+   DedeXHTTP = null;
+ }
+ function postBadGood(ftype,fid)
+ {
+   var taget_obj = document.getElementById(ftype+fid);
+   var saveid = GetCookie('badgoodid');
+   if(saveid != null)
+   {
+    var saveids = saveid.split(',');
+    var hasid = false;
+    saveid = '';
+    j = 1;
+    for(i=saveids.length-1;i>=0;i--)
+    {
+     if(saveids[i]==fid && hasid) continue;
+     else {
+      if(saveids[i]==fid && !hasid) hasid = true;
+      saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+      j++;
+      if(j==10 && hasid) break;
+      if(j==9 && !hasid) break;
+    }
+  }
+  if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+  else saveid += ','+fid;
+  SetCookie('badgoodid',saveid,1);
+}
+else
+{
+  SetCookie('badgoodid',fid,1);
+}
+myajax = new DedeAjax(taget_obj,false,false,'','','');
+myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/templets/default/style/global.css" />
+<link rel="stylesheet" type="text/css" href="/templets/default/style/header.css" />
+<title>天津大学遥感研究中心</title>
+<script type="text/javascript" src="/templets/default/js/settab.js"></script>
+</head>
+<body>
+<!--header begin-->
+<div class="header">
+ <div class="wrap">
+  <a  title="" target="_blank"><img src="/templets/default/images/ad1.jpg" width="1004" height="40" /></a>
+  <div class="search_box">
+   <a  title="" target="_blank"><img src="/templets/default/images/logo1.jpg" width="1002" height="97"  alt="" class="fl"/></a>
+   <div class="cb"></div>
+ <a style="margin-left:940px;" href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)" style="position:relative;top:-40px;font-size:15px;"><span>收藏本站</span></a>
+  </div>
+ </div>
+ <div class="nav"style="width:1004px">
+  <div class="wrap">
+      <a id="a1" style="color: #fff;font-size: 12px;font-weight:bold;line-height: 32px;"href="/a/en">EnglishView</a>
+   <ul class="nav_left">
+
+<li><a href='/'><span>主页</span></a></li>
+        <!-- 
+        <li><a href='/a/zh/zhongxinjianjie/index.html' ><span>中心简介</span></a></li>
+        
+        <li><a href='/a/zh/yanjiuduiwu/index.html' ><span>研究队伍</span></a></li>
+        
+        <li><a href='/a/zh/yanjiufangxiang/index.html' ><span>研究方向</span></a></li>
+        
+        <li><a href='/a/zh/xueshuweiyuanhui/index.html' ><span>学术委员会</span></a></li>
+        
+        <li><a href='/a/zh/hezuojiaoliu/index.html' ><span>合作交流</span></a></li>
+        
+        <li><a href='/a/zh/yanjiudongtai/index.html' ><span>研究动态</span></a></li>
+        
+        <li><a href='/a/zh/rencaizhaopin/index.html' ><span>人才招聘</span></a></li>
+        
+        <li><a href='/a/zh/lianxiwomen/index.html' ><span>联系我们</span></a></li>
+         -->
+         <li><a href='/plus/list.php?tid=11'><span>中心简介</span></a></li><li><a href='/plus/list.php?tid=12'><span>研究方向</span></a></li><li><a href='/plus/list.php?tid=13'><span>学术委员会</span></a></li><li><a href='/plus/list.php?tid=14'><span>研究队伍</span></a></li><li><a href='/plus/list.php?tid=15'><span>研究动态</span></a></li><li><a href='/plus/list.php?tid=17'><span>合作交流</span></a></li><li><a href='/plus/list.php?tid=18'><span>人才招聘</span></a></li><li><a href='/plus/list.php?tid=19'><span>联系我们</span></a></li> 
+   </ul>
+   
+  </div>
+ </div>
+</div>
+<!--header end-->
+</body>
+</html>
+  <!-- /header -->
+  <div class="w960 center clear mt1">
+    <div class="pleft">
+     <div class="place"> <strong>当前位置:</strong> <a href='http://www.cbblab.com/'>主页</a> > <a href='/a/zh/index.html'>中文</a> > <a href='/a/zh/xinwenzhongxin/index.html'>新闻中心</a> >  </div>
+     <!-- /place -->
+     <div class="viewbox">
+      <div class="title">
+       <h2>美国国家空间数据基础设施战略规划（2014—201</h2>
+     </div>
+     <!-- /title -->
+     <div class="info"> <small>时间:</small>2014-11-18 01:41<small>来源:</small> <small>作者:</small> <small>点击:</small>
+       <script src="/plus/count.php?view=yes&aid=466&mid=1" type='text/javascript' language="javascript"></script>
+       次</div>
+       <!-- /info 
+       
+       <div class="intro">中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机</div>
+       
+      -->
+       <div class="content">
+         <table width='100%'>
+          <tr>
+           <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+            <div class=TRS_Editor><p align="justify">　<strong>　<span>2013</span><span>年</span><span>7</span><span>月</span><span>31</span><span>日</span><span>，美国联邦地理数据委员会（</span><span>FGDC</span><span>）发布了新的美国国家空间数据基础设施（</span><span>NSDI</span><span>）战略规划草案（</span><span>2014—2016</span><span>年）。制定本战略的目的是为了完成</span><span>FGDC</span><span>的使命，满足国家对基本地理空间数据的需要，保证地球科学信息的全球用户能够获取数据，以及积极推动地理空间数据应用。本文扼要介绍了规划中提出的战略目标与未来远景规划，以及空间数据基础设施建设所面临的挑战与机遇，供有相关科学家与决策者参考。</span></strong><span><span>&nbsp; </span></span>&nbsp;</p><p align="center">　　&nbsp;<img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" alt="" src="http://www.radi.cas.cn/dtxw/qysm/201308/W020130826400522655196.jpg" OLDSRC="W020130826400522655196.jpg" /></p><p align="justify">　　<span>1 <span>&nbsp;</span>NSDI</span><span>的<b>战略目标</b></span>&nbsp;</p><p align="justify">　　<span><span>&nbsp;&nbsp;&nbsp; </span></span><span>NSDI </span><span>2014—2016</span><span>年战略规划中提出的</span><span>3</span><span>个战略目标为</span><span>FGDC</span><span>提供了一个工作框架，明确了未来</span><span>3</span><span>年关注的重点领域。每一个目标都有一项或多项子目标来支持计划的成功实施。战略目标确定的关键领域对于</span><span>NSDI</span><span>的继续发展非常重要，它们具体包括以下几个方面：</span>&nbsp;</p><p align="justify">　　<b><span>目标</span></b><b><span>1 </span></b><b><span>发展国家共享服务功能</span></b>&nbsp;</p><p align="justify">　　<span>（</span><span>1</span><span>）发展地理空间互操作的参考架构；</span>&nbsp;</p><p align="justify">　　<span>（</span><span>2</span><span>）将地理空间平台制度化；</span>&nbsp;</p><p align="justify">　　<span>（</span><span>3</span><span>）扩展云计算的应用；</span>&nbsp;</p><p align="justify">　　<span>（</span><span>4</span><span>）促进政府与各部门对工具的统一采购与应用。</span>&nbsp;</p><p align="justify">　　<b><span>目标</span></b><b><span>2 </span></b><b><span>确保联邦地理空间资源的可说明性与有效管理</span></b>&nbsp;</p><p align="justify">　　<span>（</span><span>1</span><span>）完善国家地理空间数据资产（</span><span>NGDA</span><span>）的组合管理程序；</span>&nbsp;</p><p align="justify">　　<span>（</span><span>2</span><span>）识别潜在的重复投资与合作机遇。</span>&nbsp;</p><p align="justify">　　<b><span>目标</span></b><b><span>3 </span></b><b><span>实现对国家地理空间社区的领导</span></b>&nbsp;</p><p align="justify">　　<span>（</span><span>1</span><span>）领导并参与制定适用于国内与国际间地理空间社区的标准；</span>&nbsp;</p><p align="justify">　　<span>（</span><span>2</span><span>）通过地理空间及非地理空间社区，为关键的国家问题开发共享方法；</span>&nbsp;</p><p align="justify">　　<span>（</span><span>3</span><span>）提高对国家空间数据基础，以及其对重要国家问题影响的认识。</span>&nbsp;</p><p align="justify">　　<span>2 <span>&nbsp;</span>NSDI </span><span>的远景</span>&nbsp;</p><p align="justify">　　<span>表</span><span>1</span><span>对</span><span>NSDI</span><span>在其早期阶段的规划以及未来</span><span>2016</span><span>年发展的愿景进行了对比性介绍。</span>&nbsp;</p><p align="center">　　<span>表</span><span>1 NSDI</span><span>的新趋势</span>&nbsp;</p><div align="justify"><table>    <tbody>        <tr>            <td>            <p align="center"><span>NSDI</span><span>过去</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>NSDI</span><span>未来（</span><span>2016</span><span>年）</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>各机构间授权，共享并使用地理数据</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>关注应用信息，为政策制定者提供基础信息</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>制定空间数据与元数据标准</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>利用共享及基于标准的服务</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>改进地理空间数据的质量与数量，削减其成本</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>提取相互作用的数据源（大多都是位置相关），构建信息层面的核心数据集</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>为相关机构收集并且制作更多可用的地理数据</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>利用实时数据供给，以及传感器网络来改进监测、控制、态势感知以及决策制定</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>确定各国家、州、城市、部落、学术界以及私人部门之间的关键合作关系来增加数据可用性</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>确立政策与服务层面支持来使用并共享实时的地理数据操作管理与决策支持</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>增加利用现有官方数据的利益</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>与实地相关的多时相信息的使用</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>减少庞大系统在重复空间数据及其应用过程中的储存与管理</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>整合并应用先进的技术以及它们关联的标准</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>合作努力，共同致力于空间数据</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>NSDI</span><span>是一个基础设施，远远超出了数据本身，整合了人、硬件、软件以及程序</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>为联邦地理空间数据资源（包括公共的</span><span>/</span><span>个人的</span><span>/</span><span>非盈利的共享管理）建立一个框架</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>使数据的所有发现具有创新性</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>为创造并管理地理空间数据以及服务标准提供一个过程</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>转向面对社区驱动的开放标准</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>建立关于联邦地理空间数据需求和后续合作制度方面的知识</span><span> </span>&nbsp;</p>            </td>            <td>            <p align="center"><span>培养并且整合一个超越政府实体（虚拟组织）的拥有自己情报与机构知识背景的社会组织</span><span>/</span><span>网络</span>&nbsp;</p>            </td>        </tr>        <tr>            <td>            <p align="center"><span>建立一个专属于个人的框架，可以去认识并支持联邦政府的地理空间信息需求</span>&nbsp;</p>            </td>            <td>            <p align="center"><span>提供给政府、商业以及市民一种途径，可以更直观地认识并且开发数据，重新形成信息和知识</span>&nbsp;</p>            <p align="center"><span>创建一个资源与服务的网络，在位置参考信息向更宽泛的信息集和之间形成无缝整合</span>&nbsp;</p>            </td>        </tr>    </tbody></table></div><p align="justify">　　<span>3 <span>&nbsp;</span>NSDI</span><span>的挑战与机遇</span>&nbsp;</p><p align="justify">　　<b><span><span>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><span>在该计划的发展过程中，</span><span>FGDC</span><span>已经和众多联邦及非联邦的利益相关者举办了一系列的讨论会，共同讨论商定</span><span>NSDI</span><span>持续发展相关的优势、挑战和机遇。其重点包括以下方面：①地理空间数据、信息及其服务的数量、质量、分配以及许可，作为联邦社区的优势都已经得到认可。各地理空间社区都依赖于</span><span>FGDC</span><span>在元数据导航及其标准协调的领导地位。②在领导地位、政策演变、机构简化以及地理空间社区的利益方面，联邦的作用现已经被利益相关者所确认。③</span><span>A-16</span><span>号文件是协调联邦所有地理空间数据的基础，其实施职责、义务以及完成对于联邦社区来说都是一个挑战。④由于地理空间社区的广泛参与，满足各社区不同需求的优先顺序则是现阶段所面临的挑战。如何去量化地理空间数据的投资也是一个难题。⑤伴随国家地理空间社区的成功组建以及地理空间数据和服务的广泛应用，联邦地理空间社区又面临着新的挑战。当公众通过智能手机与电脑轻松获取信息时，在提供这些地理空间数据与服务的联邦投资利益与价值却很难得到体现。另外，技术的采用与联邦政府政策发展不能与日新月异的技术革新与时俱进。</span><span><span>&nbsp;&nbsp;&nbsp; </span></span>&nbsp;</p><p align="justify">　　<span>原文题目：</span></p><p align="justify"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>National Spatial Data Infrastructure Strategic Plan 2014-2016 </span>&nbsp;</p><p align="justify">　　<span>来源：</span></p><p align="justify"><span>&nbsp;&nbsp;&nbsp; </span><span><a href="http://www.fgdc.gov/nsdi-plan/draft-nsdi-strategic-plana8093public-comment-version-7-31-2013.pdf">http://www.fgdc.gov/nsdi-plan/draft-nsdi-strategic-plana8093public-comment-version-7-31-2013.pdf</a></span>&nbsp;</p><p align="justify">　
+            
+            (责任编辑：admin)</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+      <div class="dede_pages">
+       <ul class="pagelist">
+        
+      </ul>
+    </div>
+    <!-- /pages -->
+    <!-- //顶踩 -->
+    <div class="newdigg" id="newdigg">
+     <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',466)">
+      <div class="digg_act">顶一下</div>
+      <div class="digg_num">(0)</div>
+      <div class="digg_percent">
+       <div class="digg_percent_bar"><span style="width:0%"></span></div>
+       <div class="digg_percent_num">0%</div>
+     </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',466)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+   </div>
+ </div>
+</div>
+<script language="javascript" type="text/javascript">getDigg(466);</script>
+<!-- //顶踩部份的源码结束 -->
+<!-- //分享代码开始 -->
+
+<!-- //分享代码结束 -->
+<div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+<div class="handle">
+ <div class="context">
+  <ul>
+   <li>上一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/465.html'>PNAS文章称21世纪热带气旋将更强更频繁</strong></a> </li>
+   <li>下一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/467.html'>全球探索路线图发布</strong></a> </li>
+ </ul>
+</div>
+<!-- /context -->
+<!-- <div class="actbox">
+  <ul>
+   <li id="act-fav"><a href="/plus/stow.php?aid=466" target="_blank">收藏</a></li>
+   <li id="act-err"><a href="/plus/erraddsave.php?aid=466&title=美国国家空间数据基础设施战略规划（2014—201" target="_blank">挑错</a></li>
+   <li id="act-pus"><a href="/plus/recommend.php?aid=466" target="_blank">推荐</a></li>
+   <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+ </ul>
+</div> -->
+<!-- /actbox -->
+</div>
+<!-- /handle -->
+</div>
+<!-- /viewbox -->
+<!-- //AJAX评论区 -->
+
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+<!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		<div class="copyright">地址：天津市南开区卫津路92号| 邮编：300072</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

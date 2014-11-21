@@ -1,0 +1,1 @@
+[field:body funciton="strip_tags(@me)"/]

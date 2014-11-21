@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>4G技术集成</strong>_天津大学遥感研究中心</title>
+  <meta name="keywords" content="遥感与数字地球、数字地" />
+  <meta name="description" content="中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机" />
+  <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+  <script language="javascript" type="text/javascript">
+  <!--
+  function CheckLogin(){
+   var taget_obj = document.getElementById('_ajax_feedback');
+   myajax = new DedeAjax(taget_obj,false,false,'','','');
+   myajax.SendGet2("/member/ajax_feedback.php");
+   DedeXHTTP = null;
+ }
+ function postBadGood(ftype,fid)
+ {
+   var taget_obj = document.getElementById(ftype+fid);
+   var saveid = GetCookie('badgoodid');
+   if(saveid != null)
+   {
+    var saveids = saveid.split(',');
+    var hasid = false;
+    saveid = '';
+    j = 1;
+    for(i=saveids.length-1;i>=0;i--)
+    {
+     if(saveids[i]==fid && hasid) continue;
+     else {
+      if(saveids[i]==fid && !hasid) hasid = true;
+      saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+      j++;
+      if(j==10 && hasid) break;
+      if(j==9 && !hasid) break;
+    }
+  }
+  if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+  else saveid += ','+fid;
+  SetCookie('badgoodid',saveid,1);
+}
+else
+{
+  SetCookie('badgoodid',fid,1);
+}
+myajax = new DedeAjax(taget_obj,false,false,'','','');
+myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/templets/default/style/global.css" />
+<link rel="stylesheet" type="text/css" href="/templets/default/style/header.css" />
+<title>天津大学遥感研究中心</title>
+<script type="text/javascript" src="/templets/default/js/settab.js"></script>
+</head>
+<body>
+<!--header begin-->
+<div class="header">
+ <div class="wrap">
+  <a  title="" target="_blank"><img src="/templets/default/images/ad1.jpg" width="1004" height="40" /></a>
+  <div class="search_box">
+   <a  title="" target="_blank"><img src="/templets/default/images/logo1.jpg" width="1002" height="97"  alt="" class="fl"/></a>
+   <div class="cb"></div>
+ <a style="margin-left:940px;" href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)" style="position:relative;top:-40px;font-size:15px;"><span>收藏本站</span></a>
+  </div>
+ </div>
+ <div class="nav"style="width:1004px">
+  <div class="wrap">
+      <a id="a1" style="color: #fff;font-size: 12px;font-weight:bold;line-height: 32px;"href="/a/en">EnglishView</a>
+   <ul class="nav_left">
+
+<li><a href='/'><span>主页</span></a></li>
+        <!-- 
+        <li><a href='/a/zh/zhongxinjianjie/index.html' ><span>中心简介</span></a></li>
+        
+        <li><a href='/a/zh/yanjiuduiwu/index.html' ><span>研究队伍</span></a></li>
+        
+        <li><a href='/a/zh/yanjiufangxiang/index.html' ><span>研究方向</span></a></li>
+        
+        <li><a href='/a/zh/xueshuweiyuanhui/index.html' ><span>学术委员会</span></a></li>
+        
+        <li><a href='/a/zh/hezuojiaoliu/index.html' ><span>合作交流</span></a></li>
+        
+        <li><a href='/a/zh/yanjiudongtai/index.html' ><span>研究动态</span></a></li>
+        
+        <li><a href='/a/zh/rencaizhaopin/index.html' ><span>人才招聘</span></a></li>
+        
+        <li><a href='/a/zh/lianxiwomen/index.html' ><span>联系我们</span></a></li>
+         -->
+         <li><a href='/plus/list.php?tid=11'><span>中心简介</span></a></li><li><a href='/plus/list.php?tid=12'><span>研究方向</span></a></li><li><a href='/plus/list.php?tid=13'><span>学术委员会</span></a></li><li><a href='/plus/list.php?tid=14'><span>研究队伍</span></a></li><li><a href='/plus/list.php?tid=15'><span>研究动态</span></a></li><li><a href='/plus/list.php?tid=17'><span>合作交流</span></a></li><li><a href='/plus/list.php?tid=18'><span>人才招聘</span></a></li><li><a href='/plus/list.php?tid=19'><span>联系我们</span></a></li> 
+   </ul>
+   
+  </div>
+ </div>
+</div>
+<!--header end-->
+</body>
+</html>
+  <!-- /header -->
+  <div class="w960 center clear mt1">
+    <div class="pleft">
+     <div class="place"> <strong>当前位置:</strong> <a href='http://www.cbblab.com/'>主页</a> > <a href='/a/zh/index.html'>中文</a> > <a href='/a/zh/xinwenzhongxin/index.html'>新闻中心</a> >  </div>
+     <!-- /place -->
+     <div class="viewbox">
+      <div class="title">
+       <h2>4G技术集成</strong></h2>
+     </div>
+     <!-- /title -->
+     <div class="info"> <small>时间:</small>2014-11-18 01:41<small>来源:</small> <small>作者:</small> <small>点击:</small>
+       <script src="/plus/count.php?view=yes&aid=449&mid=1" type='text/javascript' language="javascript"></script>
+       次</div>
+       <!-- /info 
+       
+       <div class="intro">中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机</div>
+       
+      -->
+       <div class="content">
+         <table width='100%'>
+          <tr>
+           <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+            <DIV class=cas_content>
+<P style="TEXT-ALIGN: justify">对地下空间的探测需要依靠团队综合运用4G技术（地质学、地球物理学、地球化学和GIS）进行集成，增强团员间的合作意识，改善工作流程和工作方法以应对探索过程中的挑战。</P>
+<P style="TEXT-ALIGN: justify">现代制图软件，通过改进GIS的工作流程实数据多方位的高级访问，进行更准确的结果解释。一些开发软件通过开发系统和对GIS的应有，包括数据的输入，通过质量控制及与其他数据集的集成分析，最终进行可视化显示，用于支持地下调查集成分析，对小组工作成员、管理者和产业相关利益者意义重大。3D软件同样也可用于不同类型数据集的集成分析，包括地球科学数据、卫星影响数据和其他的GIS的数据形式，都可用于地图环境中。</P>
+<P style="TEXT-ALIGN: justify"><BR clear=all>　&nbsp; 随着大量区域性、地理科学方面数据的收集和在线资源的共享，集成方法已经成为整体视图的基本要件，多维视角的收集需要伸入到地下勘探项目中。结合高级的3D显示技术，可以使一些陈旧的数据集和知识与新的项目和地质工作者相联系。</P>
+<P style="TEXT-ALIGN: center"><STRONG><IMG style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" src="http://www.radi.cas.cn/dtxw/qysm/201307/W020130709334483898566.jpg" _fcksavedurl="/wcm/WCMV6/system/read_image.jsp?FileName=U020130709333738213353.jpg" OLDSRC=W020130709334483898566.jpg></STRONG></P>
+<P style="TEXT-ALIGN: center"><STRONG>图1 4G技术（地质学、地球物理学、地球化学和GIS）</STRONG></P>
+<P style="TEXT-ALIGN: justify">对于地球物理学者Mark Longacre来说，在石油开采领域中的关键性工作是能挖掘行业的潜在数据，和地球物理、地质方面的相关数据。在现代软件和技术支持的条件下，集成技术由重力和磁力集成转向地震缝合性的集成。通过GIS的运用，数据与地图能被广泛分享，并且其领域已经拓展到油气资源开发和地震研究。</P>
+<P style="TEXT-ALIGN: justify">加拿大的几个地质调查队通过映射和湖泊沉积物的取样工作，在成矿区探索新矿产储量。集成分析技术与GIS技术相结合，应用于地球化学中的钻孔研究，拼合地下空间组图，在此过程中通过与地质学和地球物理学的结合，可以服务于未来的钻井技术。</P>
+<P style="TEXT-ALIGN: justify">虽然费用的逐渐增加，但矿产资源的发现率却日渐下降。麦克马斯特大学地理与地球科学学院的教授比尔·莫里斯说，缩小差距是可能的，只要探矿者对地球科学的信息进行集成，他们就可以通过岩石和表土去寻找埋藏的沉积物。</P>
+<P style="TEXT-ALIGN: justify"><A class=" FCK__AnchorC" name=OLE_LINK51>&nbsp;</A></P>
+<P style="TEXT-ALIGN: justify">原文题目：Geoscience and GIS</P>
+<P style="TEXT-ALIGN: justify">来源：</P>
+<P style="TEXT-ALIGN: justify"><A href="http://www.geosoft.com/topics/earth-mapping/integrating-geology-geophysics-geochemistry-and-gis">http://www.geosoft.com/topics/earth-mapping/integrating-geology-geophysics-geochemistry-and-gis</A> </P>
+<P style="TEXT-ALIGN: justify">
+            
+            (责任编辑：admin)</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+      <div class="dede_pages">
+       <ul class="pagelist">
+        
+      </ul>
+    </div>
+    <!-- /pages -->
+    <!-- //顶踩 -->
+    <div class="newdigg" id="newdigg">
+     <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',449)">
+      <div class="digg_act">顶一下</div>
+      <div class="digg_num">(0)</div>
+      <div class="digg_percent">
+       <div class="digg_percent_bar"><span style="width:0%"></span></div>
+       <div class="digg_percent_num">0%</div>
+     </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',449)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+   </div>
+ </div>
+</div>
+<script language="javascript" type="text/javascript">getDigg(449);</script>
+<!-- //顶踩部份的源码结束 -->
+<!-- //分享代码开始 -->
+
+<!-- //分享代码结束 -->
+<div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+<div class="handle">
+ <div class="context">
+  <ul>
+   <li>上一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/448.html'>美国集成海洋观测系统计划进展介绍</strong></a> </li>
+   <li>下一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/450.html'>Science:卫星数据支撑未来水资源管理</strong></a> </li>
+ </ul>
+</div>
+<!-- /context -->
+<!-- <div class="actbox">
+  <ul>
+   <li id="act-fav"><a href="/plus/stow.php?aid=449" target="_blank">收藏</a></li>
+   <li id="act-err"><a href="/plus/erraddsave.php?aid=449&title=4G技术集成</strong>" target="_blank">挑错</a></li>
+   <li id="act-pus"><a href="/plus/recommend.php?aid=449" target="_blank">推荐</a></li>
+   <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+ </ul>
+</div> -->
+<!-- /actbox -->
+</div>
+<!-- /handle -->
+</div>
+<!-- /viewbox -->
+<!-- //AJAX评论区 -->
+
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+<!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		<div class="copyright">地址：天津市南开区卫津路92号| 邮编：300072</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

@@ -1,0 +1,1 @@
+<li><a href='/plus/list.php?tid=[field:id/]'><span>[field:typename/]</span></a></li>

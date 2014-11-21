@@ -1,0 +1,19 @@
+<?php
+$z[0]=Array("field","遥感与数字地球、数字地",0,74);
+$z[0][4]['name']="keywords";
+$z[1]=Array("field","中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机",76,364);
+$z[1][4]['name']="description";
+$z[2]=Array("field","英国开发出新一代微型传感器监测海洋酸化</strong>",366,470);
+$z[2][4]['name']="title";
+$z[3]=Array("field","",472,511);
+$z[3][4]['name']="writer";
+$z[4]=Array("field","",513,552);
+$z[4][4]['name']="source";
+$z[5]=Array("field","<div class=TRS_Editor><p align=\"justify\">　　<span>在海洋酸化的长期监测方面，具有实际应用效果的微型传感器的研发已经迈开了第一步，该技术可以测量海水的</span><span>pH</span><span>值</span><span>。</span>&nbsp;</p><p align=\"justify\">　　<span>英国研究团队在发现号轮船上成功测试了新设备，并将科研成果发布在《分析化学学报》（</span><span>&nbsp;<i>AnayticaChimicaActa</i></span><span>）上。该设备目前的设计可用于船载分析海水样本，但最终目的是为了改进设计，以便部署于海洋上用于长期现场监测。</span>&nbsp;</p><p align=\"justify\">　　<span>大气中的</span><span>CO<sub>2</sub></span><span>浓度升高，海洋中吸收的</span><span>CO<sub>2</sub></span><span>含量增加，从而导致海洋酸化。</span><span>CO<sub>2</sub></span><span>在海水中溶解形成弱酸，降低了全球海洋</span><span>pH</span><span>值，这可能影响海洋生态系统。</span><span>NOC</span><span>传感器组的主要研究者称，需要长期高度精准的监测海水的</span><span>pH</span><span>值，以便及时发现碳循环系统的变化。</span>&nbsp;</p><p align=\"justify\">　　<span>该传感器除了可以监测全球变化之外，还能测量局部的人为影响。微型传感器可部署用于监测碳储存过程中减少的部分（即</span><span>CO<sub>2</sub></span><span>被人为地从大气中移除，并储存在海底的过程），只需通过测量邻近的</span><span>pH</span><span>值。石油行业也是通过监测钻探地点周围的海水酸度来确定油气田的位置，所以对该技术也很关注。</span>&nbsp;</p><p align=\"justify\">　　<span>该传感器的工作原理，类似于人们在学校化学课上使用的石蕊试纸，即颜色变化取决于溶液的酸度。传感器内的微流控芯片具有很大优势，因为它功能强大、容积小、生产成本低，而且试剂使用量少，这才是现场部署的关键所在，它可以在海上长时间的收集数据。</span>&nbsp;</p><p align=\"center\">　　　<span>&nbsp;</span>&nbsp;<img style=\"border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px\" complete=\"complete\" alt=\"\" src=\"http://www.radi.cas.cn/dtxw/qysm/./W020131220590335412811.jpg\" OLDSRC=\"W020131220590335412811.jpg\" /></p><p align=\"center\">　　<strong><span>图</span><span>1</span><i><span>The microfluidic chip used in the pH micro sensor. Dimensions: 13 x 8 cm.</span></i>&nbsp;</strong></p><p align=\"justify\">　　<span>研究的下一阶段是开发一种可以部署在海洋观测平台的原位系统，与其他已安装好的传感器同时测试不同海水的不同化学性质。研究人员称已经了解了台式系统的工作原理，将利用该技术创造测量原位</span><span>pH</span><span>值的微型传感器，研究团队还包括</span><span>NOC</span><span>的海洋科学家。研究人员表示通过与工程师和科学家的合作，可以从开发人员和最终用户的见解中得到启发，从而创造出符合要求的高规格产品。</span>&nbsp;</p><p align=\"justify\">　　<span>原文题目：</span><span>New generation of micro sensors for monitoring ocean acidification</span>&nbsp;</p><p align=\"justify\">　　<span>原文地址：</span></p><p align=\"justify\"><span>&nbsp;&nbsp;&nbsp; </span><span><a href=\"http://noc.ac.uk/news/new-generation-micro-sensors-monitoring-ocean-acidification\">http://noc.ac.uk/news/new-generation-micro-sensors-monitoring-ocean-acidification</a></span></p><p align=\"justify\"><span>&nbsp; </span>&nbsp;",554,4272);
+$z[5][4]['name']="body";
+$z[6]=Array("field","",4274,4314);
+$z[6][4]['name']="pubdate";
+$z[7]=Array("field","",4316,4355);
+$z[7][4]['name']="litpic";
+
+?>

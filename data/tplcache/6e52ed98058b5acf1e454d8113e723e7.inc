@@ -1,0 +1,1 @@
+<li><a href='[field:sitepath/]'><span>[field:typename/]</span></a></li>

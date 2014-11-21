@@ -1,0 +1,19 @@
+<?php
+$z[0]=Array("field","遥感与数字地球、数字地",0,74);
+$z[0][4]['name']="keywords";
+$z[1]=Array("field","中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机",76,364);
+$z[1][4]['name']="description";
+$z[2]=Array("field","IPCC报告草案更确定人类活动引起气候变化</strong>",366,468);
+$z[2][4]['name']="title";
+$z[3]=Array("field","",470,509);
+$z[3][4]['name']="writer";
+$z[4]=Array("field","",511,550);
+$z[4][4]['name']="source";
+$z[5]=Array("field","<div class=TRS_Editor><p align=\"justify\">　　<span>IPCC</span><span>是由世界气象组织和联合国环境规划署于</span><span>1988</span><span>年共同创建的一个政府间机构，每</span><span>6</span><span>年出版一次评估报告，总结气候变化的既有认知，其报告成为气候变化国际谈判的科学基础，对谈判产生重要影响。</span><span>&nbsp;</span>&nbsp;</p><p align=\"justify\">　　<span>正在编撰的第五次评估报告分三个部分，第一工作组负责有关气候变化的自然科学基础报告。</span><span>IPCC</span><span>计划</span><span>9</span><span>月</span><span>23</span><span>日至</span><span>26</span><span>日在瑞典斯德哥尔摩讨论第一工作组的报告，然后于</span><span>27</span><span>日发布，此后一年内发布其他工作组的报告。但上周末，有媒体提前获得了第一工作组的报告草案。</span><span>&nbsp;</span>&nbsp;</p><p align=\"justify\">　　<span>媒体披露的草案称，自上世纪</span><span>50</span><span>年代以来全球变暖有</span><span>95</span><span>％以上的可能性由人类活动（主要是指燃烧化石燃料）引起。这个确定性比以往报告中的数字更高，分别于</span><span>1995</span><span>年、</span><span>2001</span><span>年与</span><span>2007</span><span>年发布的之前三次评估报告所提出的可能性依次是</span><span>50</span><span>％以上、</span><span>66</span><span>％以上以及</span><span>90</span><span>％以上。</span></p><p align=\"center\"><span><img style=\"border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px\" alt=\"\" oldsrc=\"W020130826396787513877.jpg\" src=\"http://www.radi.cas.cn/dtxw/qysm/http://www.radi.ac.cn/dtxw/qysm/201308W020130826396787513877.jpg\" />&nbsp;</span>&nbsp;</p><p align=\"justify\">　　<span>这份草案还试图解释全球变暖速度自</span><span>1998</span><span>年以来为何放缓，认为与诸多因素有关，如火山爆发使可遮蔽阳光的火山灰增加，太阳活动的周期性等。</span><span>&nbsp;</span>&nbsp;</p><p align=\"justify\">　　<span>该草案还预测，到本世纪晚期全球海平面将上升</span><span>29</span><span>至</span><span>82</span><span>厘米，此前第四次评估报告预测海平面将升高</span><span>18</span><span>到</span><span>59</span><span>厘米，据称是因为没有全面纳入南极与格陵兰岛的变化。</span>&nbsp;</p><p align=\"center\"><img style=\"border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px\" alt=\"\" oldsrc=\"W020130826396787547448.jpg\" src=\"http://www.radi.cas.cn/dtxw/qysm/http://www.radi.ac.cn/dtxw/qysm/201308W020130826396787547448.jpg\" /></p><p align=\"center\"><img style=\"border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px\" alt=\"\" oldsrc=\"W020130826396787587060.jpg\" src=\"http://www.radi.cas.cn/dtxw/qysm/http://www.radi.ac.cn/dtxw/qysm/201308W020130826396787587060.jpg\" /></p><p align=\"justify\">　　<span>IPCC8<span><span>月</span></span>19<span><span>日</span></span><span>在其网站上发表声明说，这是第一工作组报告中的“决策者摘要”部分草案，</span>IPCC</span><span>对草案内容不予评论，但这一草案仍在制订中。根据各国政府的反应以及下个月会议期间的讨论，“文本可能会出现变化……因此现在根据这一文本得出结论还为时过早，有可能出现误导”。</span><span>&nbsp;</span>&nbsp;</p><p align=\"justify\">　　<span>之前</span><span>IPCC</span><span>的第四次评估报告遇到了两大问题：一是报告预测“喜马拉雅冰川将在</span><span>2035</span><span>年消失”严重违背了事实；二是“气候门”事件，几名为</span><span>IPCC</span><span>工作的研究人员的电子邮件被黑客泄露，由于邮件中有“诡计”等词语，有人质疑气候变化报告是否造假。一些人怀疑本次泄露事件也可能是气候变化质疑者“搅局”。</span>&nbsp;</p><p align=\"justify\">　　资料<span>来源：</span>&nbsp;</p><p align=\"justify\">　　<span><a href=\"http://news.sciencenet.cn/htmlnews/2013/8/281538.shtm\">http://news.sciencenet.cn/htmlnews/2013/8/281538.shtm</a></span>&nbsp;</p><p align=\"justify\">　　<span><a href=\"http://www.ipcc.ch/pdf/assessment-report/ar4/wg1/ar4-wg1-spm.pdf\">http://www.ipcc.ch/pdf/assessment-report/ar4/wg1/ar4-wg1-spm.pdf</a></span>&nbsp;</p><p align=\"justify\">　",552,5157);
+$z[5][4]['name']="body";
+$z[6]=Array("field","",5159,5199);
+$z[6][4]['name']="pubdate";
+$z[7]=Array("field","",5201,5240);
+$z[7][4]['name']="litpic";
+
+?>

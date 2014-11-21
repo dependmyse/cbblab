@@ -1,0 +1,19 @@
+<?php
+$z[0]=Array("field","遥感与数字地球、数字地",0,74);
+$z[0][4]['name']="keywords";
+$z[1]=Array("field","中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机",76,364);
+$z[1][4]['name']="description";
+$z[2]=Array("field","英国空间领导委员会发布促进气候市场的空间技术战略</strong>",366,485);
+$z[2][4]['name']="title";
+$z[3]=Array("field","",487,526);
+$z[3][4]['name']="writer";
+$z[4]=Array("field","",528,567);
+$z[4][4]['name']="source";
+$z[5]=Array("field","",569,609);
+$z[5][4]['name']="pubdate";
+$z[6]=Array("field","<DIV class=cas_content>\n<P style=\"TEXT-ALIGN: justify\">英国计划在气候数据与服务方面成为成功的引领者，以新的战略加大空间技术在这一增长市场上的应用。2013年2月1日，英国空间领导委员会（UK’s Space Leadership Council）发布题为《空间创新与增长战略：气候技术与服务的领导力》（Space Innovation and Growth Strategy： Leadership in Climate Technologies &amp; Services）的战略报告，报告强调卫星数据要在全球商业信息中使用。天气与气候服务产值已经达到了260亿英镑，并以每年6%~10%的速度增长，碳市场知识产权部门的产值大约为300亿英镑，以每年12%~16%的速度增长。</P>\n<P style=\"TEXT-ALIGN: center\"><IMG style=\"BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px\" src=\"http://www.radi.cas.cn/dtxw/qysm/201304/W020130402547797359705.jpg\" _fcksavedurl=\"/wcm/WCMV6/system/read_image.jsp?FileName=U020130311323558764493.jpg\" OLDSRC=W020130402547797359705.jpg></P>\n<P style=\"TEXT-ALIGN: justify\">该战略由跨行业与政府的团队人员准备，主要负责人为Richard Brook教授。由英国气象局（Met Office）、英国自然环境研究理事会（NERC）、英国航天商贸联盟（UK Space Trade Association）等共同领导。作为《空间创新与增长战略》实施的一部分，该战略制定了发展卫星观测机遇的远景，这一远景给英国的定位主要有以下6个方面：</P>\n<P style=\"TEXT-ALIGN: justify\">（1）引领可靠、值得信赖的气候知识的创造、使用与销售。</P>\n<P style=\"TEXT-ALIGN: justify\">（2）开发评估气候变化政策的工具，监测政策的实施，增强气候拐点与极端天气事件的指导并改善决策。</P>\n<P style=\"TEXT-ALIGN: justify\">（3）建立全球领先能力与设备，以便进行卫星观测并获取数据。</P>\n<P style=\"TEXT-ALIGN: justify\">（4）成为公认的地球观测测量科学与计量学最佳实践的全球领先参考点。</P>\n<P style=\"TEXT-ALIGN: justify\">（5）开发自有的综合气候服务网络并领先供给全球。</P>\n<P style=\"TEXT-ALIGN: justify\">（6）抓住份额越来越大的气候及与气候服务相关的商业市场。</P>\n<P style=\"TEXT-ALIGN: justify\">这一远景计划由5个建议与12项实际行动支持。其中的5个建议是：</P>\n<P style=\"TEXT-ALIGN: justify\">（1）英国应该迅速采取行动，利用卫星（或其他平台）观测与测量数据，开发与气候信息服务相关的业务。</P>\n<P style=\"TEXT-ALIGN: justify\">（2）英国应为这些服务建立无缝供应链。</P>\n<P style=\"TEXT-ALIGN: justify\">（3）在全国开展工作，确保卫星观测、测量数据与衍生信息产品的完整性。</P>\n<P style=\"TEXT-ALIGN: justify\">（4）与国际上的其他利益相关者合作，确保所需的卫星观测的连续性及其发展。</P>\n<P style=\"TEXT-ALIGN: justify\">（5）在联系英国国家与欧盟伙伴及其他计划的活动方面，起国际引领作用。</P>\n<P style=\"TEXT-ALIGN: justify\">支持远景计划的12项实际行动是：</P>\n<P style=\"TEXT-ALIGN: justify\">（1）开展详细的市场研究，至少在两项气候服务方面开展全面的业务示范。</P>\n<P style=\"TEXT-ALIGN: justify\">（2）建立互相关联的英国地面基础设施部分。</P>\n<P style=\"TEXT-ALIGN: justify\">（3）利用气候与环境监测空间设备来处理并合并数据流及其他所需的数据集。</P>\n<P style=\"TEXT-ALIGN: justify\">（4）制定合适的计量程序与标准。</P>\n<P style=\"TEXT-ALIGN: justify\">（5）着手卫星应用发射任务，促使英国提供无缝连接的气候及相关服务的地球观测产品。</P>\n<P style=\"TEXT-ALIGN: justify\">（6）提供资助，与外界合作，确保必要的卫星观测需求，保证气候服务的可持续性。</P>\n<P style=\"TEXT-ALIGN: justify\">（7）充分参与相关的科学、研究与模型。</P>\n<P style=\"TEXT-ALIGN: justify\">（8）与其他伙伴合作，英国空间局（UK Space Agency）应建立英国科学家与欧洲航天局（ESA）及其他机构的合作机制，共同确定并发展长期的科学任务。</P>\n<P style=\"TEXT-ALIGN: justify\">（9）确定全球环境与安全监测的优先事项并尽可能确保资金资助。</P>\n<P style=\"TEXT-ALIGN: justify\">（10）协调各项活动与技术开发及培训之间的关系。</P>\n<P style=\"TEXT-ALIGN: justify\">（11）在全球率先将地球观测任务转变为长期研究事务。</P>\n<P style=\"TEXT-ALIGN: justify\">（12）保持英国在欧洲空间局气候模型用户组中的引领作用。</P>\n<P style=\"TEXT-ALIGN: justify\">原文题目：</P>\n<P style=\"TEXT-ALIGN: justify\">Climate markets to be driven by space technology</P>\n<P style=\"TEXT-ALIGN: justify\">来源：</P>\n<P style=\"TEXT-ALIGN: justify\"><A href=\"http://www.bis.gov.uk/ukspaceagency/news-and-events/2013/Jan/climate-market-strategy\">http://www.bis.gov.uk/ukspaceagency/news-and-events/2013/Jan/climate-market-strategy</A></P>\n<P style=\"TEXT-ALIGN: justify\">",611,5779);
+$z[6][4]['name']="body";
+$z[7]=Array("field","",5781,5820);
+$z[7][4]['name']="litpic";
+
+?>

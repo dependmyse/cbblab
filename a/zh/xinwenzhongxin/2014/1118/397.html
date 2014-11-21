@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>法拟绘制三维数字国土地图，将地表及地下大量_天津大学遥感研究中心</title>
+  <meta name="keywords" content="遥感与数字地球、数字地" />
+  <meta name="description" content="中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机" />
+  <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+  <script language="javascript" type="text/javascript">
+  <!--
+  function CheckLogin(){
+   var taget_obj = document.getElementById('_ajax_feedback');
+   myajax = new DedeAjax(taget_obj,false,false,'','','');
+   myajax.SendGet2("/member/ajax_feedback.php");
+   DedeXHTTP = null;
+ }
+ function postBadGood(ftype,fid)
+ {
+   var taget_obj = document.getElementById(ftype+fid);
+   var saveid = GetCookie('badgoodid');
+   if(saveid != null)
+   {
+    var saveids = saveid.split(',');
+    var hasid = false;
+    saveid = '';
+    j = 1;
+    for(i=saveids.length-1;i>=0;i--)
+    {
+     if(saveids[i]==fid && hasid) continue;
+     else {
+      if(saveids[i]==fid && !hasid) hasid = true;
+      saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+      j++;
+      if(j==10 && hasid) break;
+      if(j==9 && !hasid) break;
+    }
+  }
+  if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+  else saveid += ','+fid;
+  SetCookie('badgoodid',saveid,1);
+}
+else
+{
+  SetCookie('badgoodid',fid,1);
+}
+myajax = new DedeAjax(taget_obj,false,false,'','','');
+myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/templets/default/style/global.css" />
+<link rel="stylesheet" type="text/css" href="/templets/default/style/header.css" />
+<title>天津大学遥感研究中心</title>
+<script type="text/javascript" src="/templets/default/js/settab.js"></script>
+</head>
+<body>
+<!--header begin-->
+<div class="header">
+ <div class="wrap">
+  <a  title="" target="_blank"><img src="/templets/default/images/ad1.jpg" width="1004" height="40" /></a>
+  <div class="search_box">
+   <a  title="" target="_blank"><img src="/templets/default/images/logo1.jpg" width="1002" height="97"  alt="" class="fl"/></a>
+   <div class="cb"></div>
+ <a style="margin-left:940px;" href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)" style="position:relative;top:-40px;font-size:15px;"><span>收藏本站</span></a>
+  </div>
+ </div>
+ <div class="nav"style="width:1004px">
+  <div class="wrap">
+      <a id="a1" style="color: #fff;font-size: 12px;font-weight:bold;line-height: 32px;"href="/a/en">EnglishView</a>
+   <ul class="nav_left">
+
+<li><a href='/'><span>主页</span></a></li>
+        <!-- 
+        <li><a href='/a/zh/zhongxinjianjie/index.html' ><span>中心简介</span></a></li>
+        
+        <li><a href='/a/zh/yanjiuduiwu/index.html' ><span>研究队伍</span></a></li>
+        
+        <li><a href='/a/zh/yanjiufangxiang/index.html' ><span>研究方向</span></a></li>
+        
+        <li><a href='/a/zh/xueshuweiyuanhui/index.html' ><span>学术委员会</span></a></li>
+        
+        <li><a href='/a/zh/hezuojiaoliu/index.html' ><span>合作交流</span></a></li>
+        
+        <li><a href='/a/zh/yanjiudongtai/index.html' ><span>研究动态</span></a></li>
+        
+        <li><a href='/a/zh/rencaizhaopin/index.html' ><span>人才招聘</span></a></li>
+        
+        <li><a href='/a/zh/lianxiwomen/index.html' ><span>联系我们</span></a></li>
+         -->
+         <li><a href='/plus/list.php?tid=11'><span>中心简介</span></a></li><li><a href='/plus/list.php?tid=12'><span>研究方向</span></a></li><li><a href='/plus/list.php?tid=13'><span>学术委员会</span></a></li><li><a href='/plus/list.php?tid=14'><span>研究队伍</span></a></li><li><a href='/plus/list.php?tid=15'><span>研究动态</span></a></li><li><a href='/plus/list.php?tid=17'><span>合作交流</span></a></li><li><a href='/plus/list.php?tid=18'><span>人才招聘</span></a></li><li><a href='/plus/list.php?tid=19'><span>联系我们</span></a></li> 
+   </ul>
+   
+  </div>
+ </div>
+</div>
+<!--header end-->
+</body>
+</html>
+  <!-- /header -->
+  <div class="w960 center clear mt1">
+    <div class="pleft">
+     <div class="place"> <strong>当前位置:</strong> <a href='http://www.cbblab.com/'>主页</a> > <a href='/a/zh/index.html'>中文</a> > <a href='/a/zh/xinwenzhongxin/index.html'>新闻中心</a> >  </div>
+     <!-- /place -->
+     <div class="viewbox">
+      <div class="title">
+       <h2>法拟绘制三维数字国土地图，将地表及地下大量</h2>
+     </div>
+     <!-- /title -->
+     <div class="info"> <small>时间:</small>2014-11-18 01:40<small>来源:</small> <small>作者:</small> <small>点击:</small>
+       <script src="/plus/count.php?view=yes&aid=397&mid=1" type='text/javascript' language="javascript"></script>
+       次</div>
+       <!-- /info 
+       
+       <div class="intro">中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机</div>
+       
+      -->
+       <div class="content">
+         <table width='100%'>
+          <tr>
+           <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+            <DIV class=cas_content>
+<P style="TEXT-ALIGN: justify">据法国《世界报》报道，法国地质矿业研究局（BRGM）计划实施一项浩大工程——绘制法国三维数字国土地图，其内容将涵盖法国本土所有地区及海外省的地表及地下三维地质构造、地热、地下水等信息。该项目将动员数千研究人员和学者，整个周期预计耗时30年，目前评估的总成本达3亿欧元。该计划如能完成，这一3D地图不仅能为研究人员进行地质科研提供帮助，还能够为工业家、地方政府和开发商提供丰富的地下能源资源信息和地质灾害风险评估。</P>
+<P style="TEXT-ALIGN: justify">BRGM地质资源主任让-克洛德·吉朗诺表示，绘制3D地图这一长期计划眼下并非从零开始。法国自上世纪70年代至今绘制了多达1064张高分辨率地质图，建立了世界领先的地质信息数据库。然而，这些二维地图仅能描述地表情况，在这些地质资料基础上，富有开拓精神的法国地质学家决心建立3D数字地图，将地上与深及2公里的地下世界绘制成统一的三维模型地图，并将大量地下信息纳入其中。</P>
+<P style="TEXT-ALIGN: center"><IMG style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" src="http://www.radi.cas.cn/dtxw/qysm/201307/W020130718502688089001.jpg" _fcksavedurl="/wcm/WCMV6/system/read_image.jsp?FileName=U020130718502470702552.jpg" OLDSRC=W020130718502688089001.jpg></P>
+<P style="TEXT-ALIGN: justify"><BR clear=all>　 为了绘制法国的地下世界，BRGM将利用约70万个钻井数十年来探测并建立的地下数据库，这些钻井包括浅层水井、地热井及约6000个深层石油、天然气井。此外，地下测绘还将利用法国石油勘探企业、417000个重力台站（观测重力及地质环境变化）及飞机勘测的地质数据。</P>
+<P style="TEXT-ALIGN: justify">大量地质信息组成了庞大的数据库，在此基础上建立三维地质模型还需要对数据进一步的处理和协调利用，BRGM联合德国和瑞士的研究团队，已针对两个试点地区的地热情况进行了绘制。下一步计划将于2014年启动，在5年时间内对比利牛斯山脉进行测绘。之后将逐步展开工作范围，直至整个法国国土绘制完成。</P>
+<P style="TEXT-ALIGN: justify">项目完成后，预期能够发挥多方面作用。首先，3D国土地图将更清晰地反映地下水资源、矿藏和能源的储备分布情况，利于开发；其次，能帮助人们找到可用的地下储藏岩洞，用以填埋二氧化碳，贮藏水、石油或其他物资，建设隧道等；此外，还可加强对洪水、地震等自然灾害的评估能力。法国BRGM绘制3D地图不仅将服务于研究机构和公共部门，还将对私营企业和社会大众开放，从而为法国全面开拓地下疆土、发展经济注入新的动力。</P>
+<P style="TEXT-ALIGN: justify">来源：</P>
+<P style="TEXT-ALIGN: justify"><A href="http://www.stdaily.com/stdaily/content/2013-07/10/content_622450.htm">http://www.stdaily.com/stdaily/content/2013-07/10/content_622450.htm</A> </P>
+<P style="TEXT-ALIGN: justify">
+            
+            (责任编辑：admin)</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+      <div class="dede_pages">
+       <ul class="pagelist">
+        
+      </ul>
+    </div>
+    <!-- /pages -->
+    <!-- //顶踩 -->
+    <div class="newdigg" id="newdigg">
+     <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',397)">
+      <div class="digg_act">顶一下</div>
+      <div class="digg_num">(0)</div>
+      <div class="digg_percent">
+       <div class="digg_percent_bar"><span style="width:0%"></span></div>
+       <div class="digg_percent_num">0%</div>
+     </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',397)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+   </div>
+ </div>
+</div>
+<script language="javascript" type="text/javascript">getDigg(397);</script>
+<!-- //顶踩部份的源码结束 -->
+<!-- //分享代码开始 -->
+
+<!-- //分享代码结束 -->
+<div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+<div class="handle">
+ <div class="context">
+  <ul>
+   <li>上一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/396.html'>日本计划发射卫星监视全球海洋</strong></a> </li>
+   <li>下一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/398.html'>NASA发射一颗新型太阳观测卫星</strong></a> </li>
+ </ul>
+</div>
+<!-- /context -->
+<!-- <div class="actbox">
+  <ul>
+   <li id="act-fav"><a href="/plus/stow.php?aid=397" target="_blank">收藏</a></li>
+   <li id="act-err"><a href="/plus/erraddsave.php?aid=397&title=法拟绘制三维数字国土地图，将地表及地下大量" target="_blank">挑错</a></li>
+   <li id="act-pus"><a href="/plus/recommend.php?aid=397" target="_blank">推荐</a></li>
+   <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+ </ul>
+</div> -->
+<!-- /actbox -->
+</div>
+<!-- /handle -->
+</div>
+<!-- /viewbox -->
+<!-- //AJAX评论区 -->
+
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+<!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		<div class="copyright">地址：天津市南开区卫津路92号| 邮编：300072</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

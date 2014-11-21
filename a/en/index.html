@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Tju CRS Center</title>
+  <link href="/templets/default/style/style.css" type="text/css" rel="stylesheet" />
+  <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script type="text/javascript">
+//弹出隐藏层
+function ShowDiv(show_div,bg_div){
+  document.getElementById(show_div).style.display='block';
+  document.getElementById(bg_div).style.display='block' ;
+  var bgdiv = document.getElementById(bg_div);
+  bgdiv.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+$("#"+bg_div).height($(document).height());
+};
+//关闭弹出层
+function CloseDiv(show_div,bg_div)
+{
+  document.getElementById(show_div).style.display='none';
+  document.getElementById(bg_div).style.display='none';
+};
+</script>
+
+<script type="text/javascript" src="/templets/default/js/banner1.js"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript" src="/images/js/j.js" ></script>
+<script language="javascript" type="text/javascript" src="/templets/default/js/pic_scroll.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+$(function(){
+  $("a[_for]").mouseover(function(){
+    $(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+    $(this).addClass("thisclass").blur();
+    $("#"+$(this).attr("_for")).show();
+  });
+  $("a[_for=uc_member]").mouseover();
+  $("a[_for=flink_1]").mouseover();
+});
+
+function CheckLogin(){
+  var taget_obj = document.getElementById('_userlogin');
+  myajax = new DedeAjax(taget_obj,false,false,'','','');
+  myajax.SendGet2("/member/ajax_loginsta.php");
+  DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+ 
+//设为首页
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+ 
+//收藏本站
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+</head>
+<body>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/templets/default/style/global.css" />
+<link rel="stylesheet" type="text/css" href="/templets/default/style/header.css" />
+<title>Center of Remote Sensing of Tianjin University</title>
+<script type="text/javascript" src="/templets/default/js/settab.js"></script>
+</head>
+<body>
+<!--header begin-->
+<div class="header">
+ <div class="wrap">
+    <a  title="" target="_blank"><img src="/templets/default/images/ad1.jpg" width="1004" height="40" /></a>
+  <div class="search_box">
+   <a  title="" target="_blank"><img src="/templets/default/images/enlogo.jpg" width="1002" height="97"  alt="" class="fl"/></a>
+   <div class="cb"></div>
+ <a style="margin-left:940px;"href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)" style="position:relative;top:-40px;font-size:15px;">Favorite</a>
+  </div>
+ </div>
+ <div class="nav"style="width:1004px">
+  <div class="wrap">
+   <ul class="nav_left">
+<li><a href='/a/en'><span>Home</span></a></li>       
+         <li><a href='/plus/list.php?tid=1113'><span>About CRS</span></a></li><li><a href='/plus/list.php?tid=1114'><span>Team</span></a></li><li><a href='/plus/list.php?tid=1115'><span>Research</span></a></li><li><a href='/plus/list.php?tid=1116'><span>Committee</span></a></li><li><a href='/plus/list.php?tid=1117'><span>News</span></a></li><li><a href='/plus/list.php?tid=1118'><span>Cooperation</span></a></li><li><a href='/plus/list.php?tid=1119'><span>Recruit</span></a></li> 
+        <li><a href='/'><span>Chinese Version</span></a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<!--header end-->
+</body>
+</html><div class="content">
+
+
+  <div class="clear"></div>
+  <div class="content_left">
+    <div class="left_top">
+     <div class="left_top_zuo">
+      <div id="fader">
+       <ul>
+        <li><a href="" title=""><img src="/templets/default/images/01.jpg" width="372px" height="242px" alt="我也不知道这是什么玩意"></a></li>
+        <li><a href="" title=""><img src="/templets/default/images/02.jpg" width="372px" height="242px" alt="这是火车"></a></li>
+        <li><a href="" title=""><img src="/templets/default/images/03.jpg" width="372px" height="242px" alt="这是西红柿"></a></li>
+        <li><a href="" title=""><img src="/templets/default/images/04.jpg" width="372px" height="242px" alt="这是奥巴马"></a></li>
+        <li><a href="" title=""><img src="/templets/default/images/05.jpg" width="372px" height="242px" alt="这是桃子"></a></li>
+      </ul>
+    </div><!--fader(banner) end--> 
+    <script type="text/javascript" src="/templets/default/js/banner2.js"></script>
+    <div class="scdt">
+     <h1>Notices</h1>
+     <div class="intro">
+      <a href="" title=""><img src="/templets/default/images/m5.jpg" width="100px" height="100px" alt="" /></a>
+      <h2><a href="/a/zh/tongzhi/2014/1113/122.html">关于召开2014全国光学工程</a></h2>
+      <p>为了推进全国激光技术发展，促进激光技术交流，构建激光技术与激光产业间的桥梁和纽带，中国光学学会、中国电子学会、中国工程院信息与电子工程学...<a href="/a/zh/tongzhi/2014/1113/122.html">[View]</a></p>
+
+
+    </div><!--intro end-->
+    <div class="list">
+      <ul>
+
+        <li style="margin-left:30px;"><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/tongzhi/2014/1113/122.html">关于召开2014全国光学工程与光电子博士生学术论</a></li>
+<li style="margin-left:30px;"><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/tongzhi/2014/1113/121.html">2014-2015学年第一学期硕士、博士学位申请与授予</a></li>
+<li style="margin-left:30px;"><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/tongzhi/2014/1113/120.html">2015年天津大学各学院接收推免硕士生实施方案</a></li>
+ 
+      </ul>
+    </div><!--list end-->
+  </div><!--scdt end-->
+
+
+</div><!--top_left_zuo end-->
+</form>
+<div class="left_top_you">
+  <div class="kydt">
+    <h1><span>Research News</span><a class="more" href="/a/en/Reserach/index.html"  title="">More>></a></h1>
+    <div class="clear"></div>
+    <div class="list">
+      <ul>
+       <li class="li1">
+        <h2><a href='/plus/view.php?aid=124' target='_blank'>天津大学遥感中心</a></h2>
+        <p> 为了推进全国激光技术发展，促进激光技术交流，构建激光技术与激光产业间的桥梁和纽带，中国光学学会、中国电子学会、中国工程院信息与电子工程学部将于2014 年8 月联合举办第二十一届全国激光学术会议。 本次大会将邀请我国激光与光电子领域的院士、知名专家、技术带头人作专题报告，并开辟有<a href='/plus/view.php?aid=124' target='_blank'>[View]</a></p> 
+      </li>
+    </ul>
+  </div>
+</div><!--hyyw end-->
+<div class="xwzx">
+  <h1><span>News</span><a class="more" href="/a/en/Reserach/index.html" title="">More>></a></h1>
+  <div class="clear"></div>
+  <div class="list">
+    <ul>
+
+     <li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/xinwenzhongxin/2014/1118/578.html">我国对地观测卫星“高分二号”成功发射：分辨</a></li>
+<li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/xinwenzhongxin/2014/1118/579.html">白宫科学和技术政策办公室发布新的民用地球观</a></li>
+<li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/xinwenzhongxin/2014/1118/580.html">NASA大气二氧化碳观测项目将有望带来全球碳循环</a></li>
+<li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/xinwenzhongxin/2014/1118/581.html">美国国家大气研究中心启动大气臭氧来源追踪研</a></li>
+<li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/xinwenzhongxin/2014/1118/577.html">美国研究人员研制无人机成功测量极地冰盖变化</a></li>
+<li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="/a/zh/xinwenzhongxin/2014/1118/576.html">NASA轨道碳观测卫星（OCO-2）重新聚焦全球碳循环</a></li>
+
+   </ul>
+ </div>
+</div><!--hyfx end-->
+
+
+</div><!--top_left_you end-->
+</div><!--left_top end-->
+</div><!--content_left end-->
+<div class="content_right">
+  <div class="hyzxdt">
+    <h1><span>Industry Information</span><a class="more" href="/a/en/Industry_Information/index.html" title="">More>></a></h1>
+    <div class="clear"></div>
+    <div class="list" style="width: 238px; ">
+      <ul style="width: 238px; ">
+       <li class="li1">
+        <h2><a href='/plus/view.php?aid=123' target='_blank'>关于召开电子信息交流大会的通知</a></h2>
+        <p> 为了推进全国激光技术发展，促进激光技术交流，构建激光技术与激光产业间的桥梁和纽带，中国光学学会、中国电子学会、中国工程院信息与电子工程学部将于2014 年8 月联合举办第二十一届全国激光学术会议。 本次大会将邀请<a href='/plus/view.php?aid=123' target='_blank'>[View]</a></p> 
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="yqlj">
+  <h1>Links</h1>
+  <div class="intro">
+    <div class="connect" style="margin-left:40px;"><a href="http://www.twt.edu.cn" title="" target="_blank"><img src="/templets/default/images/tyt.jpg" alt="" /></a></div>
+    <div class="connect" style="margin-left:40p;"><a href="http://www.tju.edu.cn" title="" target="_blank"><img src="/templets/default/images/tjdx.jpg" alt="" /></a></div>
+
+  </div>
+</div><!--intro end-->     
+</div><!--yqlj end-->
+
+</div><!--content_right end--> 
+<div class="clear"></div><!--清除浮动-->
+
+</div><!--content end-->
+
+<div class="footer" >
+ <ul>
+   <div style="margin-left:250px;margin-top:5px;"><li class="li_left">Address：92Weijin Road, Nankai District, Tianjin, P.R.China|Postcode：300072</li></div>
+ </ul>
+</div><!--footer end-->
+</body>
+
+</html>

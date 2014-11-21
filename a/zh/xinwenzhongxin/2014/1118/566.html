@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>研究人员开发空气质量监测器和预测模型</stron_天津大学遥感研究中心</title>
+  <meta name="keywords" content="遥感与数字地球、数字地" />
+  <meta name="description" content="中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机" />
+  <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+  <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+  <script language="javascript" type="text/javascript">
+  <!--
+  function CheckLogin(){
+   var taget_obj = document.getElementById('_ajax_feedback');
+   myajax = new DedeAjax(taget_obj,false,false,'','','');
+   myajax.SendGet2("/member/ajax_feedback.php");
+   DedeXHTTP = null;
+ }
+ function postBadGood(ftype,fid)
+ {
+   var taget_obj = document.getElementById(ftype+fid);
+   var saveid = GetCookie('badgoodid');
+   if(saveid != null)
+   {
+    var saveids = saveid.split(',');
+    var hasid = false;
+    saveid = '';
+    j = 1;
+    for(i=saveids.length-1;i>=0;i--)
+    {
+     if(saveids[i]==fid && hasid) continue;
+     else {
+      if(saveids[i]==fid && !hasid) hasid = true;
+      saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+      j++;
+      if(j==10 && hasid) break;
+      if(j==9 && !hasid) break;
+    }
+  }
+  if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+  else saveid += ','+fid;
+  SetCookie('badgoodid',saveid,1);
+}
+else
+{
+  SetCookie('badgoodid',fid,1);
+}
+myajax = new DedeAjax(taget_obj,false,false,'','','');
+myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/templets/default/style/global.css" />
+<link rel="stylesheet" type="text/css" href="/templets/default/style/header.css" />
+<title>天津大学遥感研究中心</title>
+<script type="text/javascript" src="/templets/default/js/settab.js"></script>
+</head>
+<body>
+<!--header begin-->
+<div class="header">
+ <div class="wrap">
+  <a  title="" target="_blank"><img src="/templets/default/images/ad1.jpg" width="1004" height="40" /></a>
+  <div class="search_box">
+   <a  title="" target="_blank"><img src="/templets/default/images/logo1.jpg" width="1002" height="97"  alt="" class="fl"/></a>
+   <div class="cb"></div>
+ <a style="margin-left:940px;" href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)" style="position:relative;top:-40px;font-size:15px;"><span>收藏本站</span></a>
+  </div>
+ </div>
+ <div class="nav"style="width:1004px">
+  <div class="wrap">
+      <a id="a1" style="color: #fff;font-size: 12px;font-weight:bold;line-height: 32px;"href="/a/en">EnglishView</a>
+   <ul class="nav_left">
+
+<li><a href='/'><span>主页</span></a></li>
+        <!-- 
+        <li><a href='/a/zh/zhongxinjianjie/index.html' ><span>中心简介</span></a></li>
+        
+        <li><a href='/a/zh/yanjiuduiwu/index.html' ><span>研究队伍</span></a></li>
+        
+        <li><a href='/a/zh/yanjiufangxiang/index.html' ><span>研究方向</span></a></li>
+        
+        <li><a href='/a/zh/xueshuweiyuanhui/index.html' ><span>学术委员会</span></a></li>
+        
+        <li><a href='/a/zh/hezuojiaoliu/index.html' ><span>合作交流</span></a></li>
+        
+        <li><a href='/a/zh/yanjiudongtai/index.html' ><span>研究动态</span></a></li>
+        
+        <li><a href='/a/zh/rencaizhaopin/index.html' ><span>人才招聘</span></a></li>
+        
+        <li><a href='/a/zh/lianxiwomen/index.html' ><span>联系我们</span></a></li>
+         -->
+         <li><a href='/plus/list.php?tid=11'><span>中心简介</span></a></li><li><a href='/plus/list.php?tid=12'><span>研究方向</span></a></li><li><a href='/plus/list.php?tid=13'><span>学术委员会</span></a></li><li><a href='/plus/list.php?tid=14'><span>研究队伍</span></a></li><li><a href='/plus/list.php?tid=15'><span>研究动态</span></a></li><li><a href='/plus/list.php?tid=17'><span>合作交流</span></a></li><li><a href='/plus/list.php?tid=18'><span>人才招聘</span></a></li><li><a href='/plus/list.php?tid=19'><span>联系我们</span></a></li> 
+   </ul>
+   
+  </div>
+ </div>
+</div>
+<!--header end-->
+</body>
+</html>
+  <!-- /header -->
+  <div class="w960 center clear mt1">
+    <div class="pleft">
+     <div class="place"> <strong>当前位置:</strong> <a href='http://www.cbblab.com/'>主页</a> > <a href='/a/zh/index.html'>中文</a> > <a href='/a/zh/xinwenzhongxin/index.html'>新闻中心</a> >  </div>
+     <!-- /place -->
+     <div class="viewbox">
+      <div class="title">
+       <h2>研究人员开发空气质量监测器和预测模型</stron</h2>
+     </div>
+     <!-- /title -->
+     <div class="info"> <small>时间:</small>2014-11-18 01:51<small>来源:</small> <small>作者:</small> <small>点击:</small>
+       <script src="/plus/count.php?view=yes&aid=566&mid=1" type='text/javascript' language="javascript"></script>
+       次</div>
+       <!-- /info 
+       
+       <div class="intro">中国科学院遥感与数字地球研究所,目前拥有遥感科学国家重点实验室、国家航天局航天遥感论证中心、国家遥感应用工程技术研究中心、遥感卫星应用国家工程实验室四大国家级科研机</div>
+       
+      -->
+       <div class="content">
+         <table width='100%'>
+          <tr>
+           <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+            <div class=TRS_Editor><p align="justify">　　<span><span><span>对空气污染与心血管疾病和哮喘之间的流行病学关系的理解已变得越来越精确，但到底什么地方的空气污染最严重，往往受制于空气质量监测站点的严重不足。例如加拿大多伦多只有</span></span></span><span><span><span>4</span></span></span><span><span><span>个空气质量监测站提供实时数据。为了更精确地衡量空气污染的程度，加拿大多伦多的研究人员正在开发一种可部署在城市电线杆上的廉价空气质量监测器。该设备的大小与鞋盒一样，里面装满了传感器和探测器，可测量空气中的细颗粒物、氮氧化物、挥发性有机化合物和一氧化碳的浓度，最终由锂电池和小型太阳能板供电。组件的价格在</span></span></span><span><span><span>300</span></span></span><span><span><span>美元以下，监测器也可适用于室内空气质量的监测。</span></span></span>&nbsp;</p><p align="justify">　　<span><span><span>研究人员称，该监测器将来可无线连接数据网络，将测量数据实时传递到中央数据库，用户可到网站上查询特定街区的污染水平，以便调整自己的出行路线，或要求政府部门处理当地的污染源。目前，研究团队已在高速公路附近安装了十几个自制的污染监测站，以研究交通对附近空气质量的影响。其最终目标是鼓励当地政府在城市周围大量部署这些低成本的监测设备，以创建一个更细致、更实时的污染地理图。</span></span></span>&nbsp;</p><p align="justify">　　<span><span><span>此外，随着空气污染与一些疾病之间的密切联系，空气质量预报将在减缓健康风险方面发挥越来越大的作用。目前，预测空气污染的模型正在设计之中，可用来防止空气污染造成的健康危害。欧盟资助的“监测大气组分与气候</span></span></span><span><span><span><span>II</span></span></span></span><span><span><span>”</span></span></span><span><span><span>（</span></span></span><span><span><span>MACC-</span></span></span><span><span><span><span>II</span></span></span></span><span><span><span>）项目，旨在预测欧洲每一空气污染物提前</span></span></span><span><span><span>3~4</span></span></span><span><span><span>天的浓度，将于</span></span></span><span><span><span>2014</span></span></span><span><span><span>年全面启动。在当地，空气质量管理者将利用这些数据及其他规模较小的模型来预测一个城市或地区的空气质量。如果预测值超出欧洲指南的污染水平，地方当局可以采取几种预防措施，包括鼓励司机降低速度，减少主要污染来源（如工业、燃煤电厂或灰尘排放土木工程）的排放，同时向人们发出预警信息。</span></span></span>&nbsp;</p><p align="justify">　　<span><span><span>空气质量模型正在成为宝贵的工具，并用于流行病学研究。健康专家现在热衷于相互关联的数据，如住院率或哮喘与污染之间的关系。这种暴露于污染的研究正在变得越来越普遍。研究人员希望通过这些研究能让人们更好地了解与将来污染有关的健康风险，从而更好地照顾病人。</span></span></span>&nbsp;</p><p align="justify">　　<span><span><span>参考资料：</span></span></span>&nbsp;</p><p align="left">　　<span><span><span>[1] Low-cost sensors gather air pollution data.</span></span></span></p><p align="left"><span><span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><a href="http://phys.org/news/2013-11-low-cost"><span><span><span><a href="http://phys.org/news/2013-11-low-cost-sensors-air-pollution.html">http://phys.org/news/2013-11-low-cost</a> &nbsp;&nbsp;</span></span></span></a><span><span><span>-sensors-air-pollution.html</span></span></span>&nbsp;</p><p align="left">　　<span><span><span>[2]Air quality models: new health prevention tools.</span></span></span></p><p align="left"><span><span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><a href="http://www.youris.com/Environment/"><span><span><span><a href="http://www.youris.com/Environment/Pollution/Air_Quality_Models_New_Health_Prevention_Tools.kl">http://www.youris.com/Environment/</a></span></span></span></a><span><span><span>Pollution/Air_Quality_Models_New_Health_Prevention_Tools.kl</span></span></span>&nbsp;</p><p align="left">&nbsp;&nbsp;&nbsp;
+            
+            (责任编辑：admin)</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+      <div class="dede_pages">
+       <ul class="pagelist">
+        
+      </ul>
+    </div>
+    <!-- /pages -->
+    <!-- //顶踩 -->
+    <div class="newdigg" id="newdigg">
+     <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',566)">
+      <div class="digg_act">顶一下</div>
+      <div class="digg_num">(0)</div>
+      <div class="digg_percent">
+       <div class="digg_percent_bar"><span style="width:0%"></span></div>
+       <div class="digg_percent_num">0%</div>
+     </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',566)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+   </div>
+ </div>
+</div>
+<script language="javascript" type="text/javascript">getDigg(566);</script>
+<!-- //顶踩部份的源码结束 -->
+<!-- //分享代码开始 -->
+
+<!-- //分享代码结束 -->
+<div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+<div class="handle">
+ <div class="context">
+  <ul>
+   <li>上一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/565.html'>我国“南涝北旱”与“北涝南旱”转换十一年资</a> </li>
+   <li>下一篇：<a href='/a/zh/xinwenzhongxin/2014/1118/567.html'>英国开发出新一代微型传感器监测海洋酸化</st</a> </li>
+ </ul>
+</div>
+<!-- /context -->
+<!-- <div class="actbox">
+  <ul>
+   <li id="act-fav"><a href="/plus/stow.php?aid=566" target="_blank">收藏</a></li>
+   <li id="act-err"><a href="/plus/erraddsave.php?aid=566&title=研究人员开发空气质量监测器和预测模型</stron" target="_blank">挑错</a></li>
+   <li id="act-pus"><a href="/plus/recommend.php?aid=566" target="_blank">推荐</a></li>
+   <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+ </ul>
+</div> -->
+<!-- /actbox -->
+</div>
+<!-- /handle -->
+</div>
+<!-- /viewbox -->
+<!-- //AJAX评论区 -->
+
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+<!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		<div class="copyright">地址：天津市南开区卫津路92号| 邮编：300072</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>天津大学&mdash;&mdash;校园网用户自服务系统</title>
+<link href="indeximg/common00.css" rel="stylesheet" type="text/css">
+<link href="indeximg/index000.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/lib/md5.js"></script>
+<script type="text/javascript">
+var is_login=0;
+function postData(theAction,theMethod,theData)
+{
+  var thePost = (window.XMLHttpRequest)? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+  switch(theMethod)
+  	{
+  		case "post":
+  			thePost.open("POST",theAction,false);
+  			thePost.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+  			thePost.send(theData);
+  			break;
+  		case "get":
+  			thePost.open("GET",theAction+"?"+theData,false);
+  			thePost.send("");
+  			break;
+  		default:
+  			return "";
+  	}
+ 	return thePost.responseText;
+}
+
+function do_logout()
+{
+	
+	if(!confirm("是否要断开连接？"))
+	{
+		return false;
+	}
+	var res = postData("/cgi-bin/srun_portal","post", "action=logout"+"&mac="+document.form1.mac.vlaue+"&user_ip="+document.form1.user_ip.value);
+	is_login=0;
+	location.reload();
+}
+
+function do_logout1()
+{
+	if(is_login==1)
+	{					
+		var l = document.location;
+		if(confirm("离开页面将断开连接，是否要注销本次登录？"))
+		{
+			var res = postData("/cgi-bin/srun_portal","post", "action=logout"+"&mac="+document.form1.mac.vlaue+"&user_ip="+document.form1.user_ip.value);
+			alert(res);
+		}
+		window.open(l);
+		window.close();
+	}
+}
+
+function jump()
+{
+	if(jump_to!="")
+	{
+		var pp=/http:\/\//;
+		if(!pp.test(jump_to))
+		{
+			location="http://"+jump_to;
+		}
+		else
+		{
+			location=jump_to;
+		}
+	}
+}
+ function jump_to1(url1){
+                if (url1 != "") {
+                    window.location.href = url1;
+                }
+                else {
+                    var u = Request('url');
+                    //alert(u);
+                    if (u != '') {
+                        u = u.indexOf('http') > -1 ? u : 'http://' + u;
+                        
+                        window.location.href = u;
+                    }
+                }
+            }
+            
+            function Request(argname){
+                var url = document.location.href;
+                var arrStr = url.substring(url.indexOf("?") + 1).split("&");
+                for (var i = 0; i < arrStr.length; i++) {
+                    var loc = arrStr[i].indexOf(argname + "=");
+                    if (loc != -1) {
+                        return arrStr[i].replace(argname + "=", '').replace("?", '');
+                        break;
+                    }
+                }
+                return '';
+            }
+function do_force_logout()
+{
+	if(!confirm("您的帐号的所有在线用户将被注销，是否继续？"))
+		return;
+	if(document.form1.uname.value=="")
+	{
+		alert("请填写您的帐号");
+		frm.username.focus();
+		return false;
+	}
+
+	if(document.form1.pass.value=="")
+	{
+		alert("请填写您的密码");
+		frm.password.focus();
+		return false;
+	}
+	var res = postData("/cgi-bin/srun_portal","post", "action=logout&force=1&username="+document.form1.uname.value+"&password="+document.form1.pass.value+"&mac="+document.form1.mac.vlaue+"&user_ip="+document.form1.user_ip.value);
+	alert(res);
+}
+
+function setCookie(name,value)
+{
+    var Days = 360; 
+    var exp  = new Date(); 
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+
+function getCookie(name)      
+{
+    var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+    if(arr != null) 
+     	return unescape(arr[2]); 
+     return null;
+}
+
+function delCookie(name)//删除cookie
+{
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null) 
+    	document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+
+function do_chk()
+{
+	var frm=document.getElementById("form1");
+	if(frm.username.value=="")
+	{
+		alert("请填写您的帐号");
+		frm.username.focus();
+		return false;
+	}
+	
+	if(frm.password.value=="")
+	{
+		alert("请填写您的密码");
+		frm.password.focus();
+		return false;
+	}
+	delCookie("tju_login");
+	if(frm.save_me.checked) //写COOKIE
+	{
+		setCookie("tju_login",frm.username.value+"|"+frm.password.value+"|"+frm.user_ip.value+"|"+frm.mac.value+"|"+frm.nas_ip.value+"|"+frm.ac_id.value);
+	}
+	else
+	{
+		setCookie("tju_login",frm.username.value+"||"+frm.user_ip.value+"|"+frm.mac.value+"|"+frm.nas_ip.value+"|"+frm.ac_id.value);
+	}
+	
+	var d = "action=login&username="+frm.username.value+"&password="+frm.password.value+"&ac_id="+frm.ac_id.value+"&type=1&wbaredirect="+frm.wbaredirect.value+"&mac="+frm.mac.vlaue+"&user_ip="+frm.user_ip.value;
+				
+	var res = postData("/cgi-bin/srun_portal","post", d);
+	//alert(res);
+	var p = /help.html/;
+	var p1 = /login_ok/;
+	if(p.test(res) || p1.test(res))
+	{
+		//document.location.reload();
+		
+		window.open("srun_portal_succeed.html", "","width=505,height=325,left=0,top=0,resizable=1");
+		setTimeout("jump_to1(url1)", 1000);
+	}
+	else
+	{
+		alert(res);
+	}
+	
+	return false;
+}
+
+function format_time(sec)
+ {
+ 	var h=Math.floor(sec/3600);
+ 	var m=Math.floor((sec%3600)/60);
+ 	var s=sec%3600%60;
+ 	var out="";
+	if(h<10)
+	{
+		out += "0"+h+" : ";
+	}
+	else
+	{
+ 		out+=h+" : ";
+	}
+	
+ 	if(m<10)
+	{
+		out+="0"+m+" : ";
+	}
+	else
+	{
+ 		out+=m+" : ";
+	}
+	
+	if(s<10)
+	{
+		out += "0"+s+"";
+	}
+	else
+	{
+		out += s+"";
+	}
+ 	return out;
+ }
+ 
+ function format_flux(byte)
+ {
+ 	if(byte>(1000*1000))
+ 		return (format_number((byte/(1000*1000)),2)+"M");
+ 	if(byte>1000)
+ 		return (format_number((byte/1000),2)+"K");
+ 	return byte+"b";
+ }
+ 
+ function format_number(num, count)
+ {
+ 	var n=Math.pow(10, count);
+ 	var t=Math.floor(num*n);
+ 	return t/n;
+ }
+ 
+var tm=0;
+var tmt;
+function show_tm()
+{
+	tm++;
+	document.getElementById("time_long").innerHTML=format_time(tm);
+	
+	tmt=setTimeout("show_tm()", 1000);
+}
+
+function get_user_info()
+{
+	var res=postData("/cgi-bin/rad_user_info", "post", "");
+	//alert(res);
+	if(res!="" && res!="not_online")
+	{
+		document.getElementById("tab_login").style.display="none";
+		document.getElementById("tab_login_info").style.display="";
+		document.getElementById("bt_connect").style.display="none";
+		document.getElementById("bt_disconnect").style.display="";
+		document.getElementById("user_info").style.display="";
+		document.getElementById("force_logout").style.display="none";
+		var arr3=res.split(",");		
+		//document.getElementById("user_name").innerHTML=arr3[0]+" 已在线";
+		tm = arr3[2]-arr3[1];
+		document.getElementById("balance_in").innerHTML=format_flux(arr3[3]);
+		document.getElementById("balance_out").innerHTML=format_flux(arr3[4]);
+		clearTimeout(tmt);
+		show_tm();
+		is_login=1;
+	}
+}
+
+function goto_services()
+{
+	var uname=document.form1.uname.value;
+ 	var pass=document.form1.pass.value;
+ 	if(uname=="")
+ 	{
+ 		alert("请填写用户名");
+ 		document.form1.uname.focus();
+ 		return;
+ 	}
+ 	
+ 	if(pass=="")
+ 	{
+ 		alert("请填写密码");
+ 		document.form1.pass.focus();
+ 		return;
+ 	}
+ 	
+	document.form1.user_login_name.value=uname;
+	document.form1.user_password.value=pass;
+	document.form1.action="http://g.tju.edu.cn:8800/do_services.php";
+	document.form1.target="_blank";
+	document.form1.submit();
+	//document.location.reload();
+}
+</script>
+</head>
+
+<body>
+<Script Langvage=javascript>
+
+function Click()
+
+{
+
+	if (event.button!=1)
+
+	{
+
+		alert('版权所有(C)2003　天津大学信息与网络中心');
+
+	}
+
+}
+
+//document.onmousedown=Click;
+
+</Script>
+
+<div id="top_link">
+    <div class="fl"></div>
+    <a href="#">设为首页</a>&nbsp;|&nbsp;<a href="#">添加收藏</a>
+</div>
+<div id="main">
+    <div id="con">
+    <br><br><br><br>
+        <div id="top">
+        	<h1><a href="http://www.tju.edu.cn/" id="logo"></a></h1>
+        </div>
+        <div>
+            <h1 style="color:#68AD2E; font-size:26px; padding:10px 0px 0px 150px; font-style:italic">&mdash;&mdash;校园网用户认证登录(无线及IPoE)</h1>
+        </div>
+        <div id="login_left" class="c-left">
+        <h2></h2>
+        <div>
+            <h1>安全防护，账号无忧</h1>
+            <p>采用多重密保措施，用户隐私安全可靠，为您的账号安全保驾护航！</p>
+        </div>
+    </div>
+    <div id="login">
+        <div class="bg">
+            <div class="con">
+                <form name="form1" id="form1" method="post" action="/cgi-bin/srun_portal">
+				  <input type="hidden" name="user_login_name" value="">
+				  <input type="hidden" name="user_password" value="">
+				  <!--<input type="hidden" name="action" value="login">	-->
+				  <input type="hidden" name="uid" value="-1">	
+				  <input type="hidden" name="is_pad" value="1">
+				  <input type="hidden" name="force" value="0">
+				  <input type="hidden" name="ac_id" value="7">
+				  <!--是否踢掉在线用户值为1时，如果用户在线数超过规定人数，就把前面的用户踢掉。-->
+				  <input type="hidden" name="pop" value="0">
+				  <!--****在此修改AC的portal协议名称,可用值为：cmcc,h3c,cisco,juniper
+				当指定ac_type后，CGI会向AC发起认证****-->
+				  <input type="hidden" name="ac_type" value="h3c">
+					
+				  <!--****在此修改与RADIUS SERVER通讯的协议,可用值为：cmcc,cams 
+				当指定rad_type后，CGI会向RADIUS SERVER发起认证****-->
+				  <input type="hidden" name="rad_type" value="">
+					
+				  <!--这里指定是否做网关认证，如果值为1，则写入本地IPV4表中-->
+				  <input type="hidden" name="gateway_auth" value="0">
+				  <!--是否先进行本地认证-->
+				  <input type="hidden" name="local_auth" value="1">
+					
+				  <!--这里指定是否启用调试模式，1为调试模式，您也可以在URL的后面
+				手工加上&is_debug=1来进入调试模式，而无须修改这里-->
+				  <input type="hidden" name="is_debug" value="0">
+				  <input type="hidden" name="is_ldap" value="0">
+					
+				  <input type="hidden" name="user_ip" value="">
+				  <input type="hidden" name="mac" value="">
+				  <input type="hidden" name="nas_ip" value="">
+				  <input type="hidden" name="ssid" value="">
+				  <input type="hidden" name="vlan" value="">
+				  <input type="hidden" name="wlanacname" value="">
+				  <input type="hidden" name="wbaredirect" value="">
+				  
+                <dl id="tab_login">
+                    <dt>
+                      <label>用户名：</label>
+                    </dt>
+                    <dd>
+                        <input name="uname" id="username" type="text" class="text" onMouseOver="this.style.borderColor='#7dbde2'"  onMouseOut="this.style.borderColor='#c4c7c8'" onClick="this.value='';this.focus();"/>
+                    </dd>
+					
+                    <dt>
+                      <label>密　码：</label>
+                    </dt>
+                    <dd>
+                        <input name="pass" id="password" type="password" class="text" onMouseOver="this.style.borderColor='#7dbde2'"  onMouseOut="this.style.borderColor='#c4c7c8'" onClick="this.value='';this.focus();"/>
+                    </dd>
+					
+                    <dt style="display:none">
+                      <label>线　路：</label>
+                    </dt>
+                    <dd style="display:none">
+						 <select name="drop" style="height:20px;width:158px;">	
+							 <option value="" selected="selected">访问互联网</option>
+							 <option value="104">访问校园网</option>
+						 </select>
+                    </dd>
+					
+                    <dt></dt>
+                    <dd>
+                        <input type="checkbox" name="save_me" value="1" class="input_c">保存密码&nbsp;&nbsp;
+                    </dd>
+                </dl>
+				
+                <dl id="tab_login_ok" style="display:none">
+                    <dt></dt>
+                    <dd>连接成功</dd>
+                </dl>
+				
+                <dl id="tab_login_info" style="display:none">
+                    <dt>
+                      	<label>已连接：</label>
+                    </dt>
+                    <dd><span id="time_long" style="font-size:18px;color:#894324;">0</span></dd>
+					
+                    <dt>
+                      	<label>入流量：</label>
+                    </dt>
+                    <dd><span id="balance_in" style="font-size:18px;color:#894324;">0</span></dd>
+					
+                    <dt>
+						<label>出流量：</label>
+					</dt>
+                    <dd><span id="balance_out" style="font-size:18px;color:#894324;">0</span></dd>
+                </dl>
+                <dl>
+                    <dt><button type="button" id="bt_connect" name="bt_connect" class="active login-btn" onClick="do_chk()">登录</button>&nbsp;
+						<button type="button" id="bt_disconnect" name="bt_disconnect" class="active login-btn" onClick="do_logout()"  style="display:none">注销</button>&nbsp;
+					</dt>
+                    <dd>
+					
+					<button type="button" id="user_info" name="user_info" class="active login-btn" onClick="get_user_info()"  style="display:none">查看流量</button>&nbsp;
+					<button type="button" id="force_logout" name="force_logout" class="active login-btn" onClick="force_logout()">强制注销</button>&nbsp;
+					<button type="button" name="logoutsubmit" class="active login-btn" onClick="goto_services();return false;">自服务</button>
+                    </dd>
+                </dl>
+                </form>
+            </div>
+        </div>
+    </div>
+	<div id="foot"> <a href="http://www.tju.edu.cn">天津大学</a> - <a href="http://nc.tju.edu.cn/">关于信息与网络中心</a> - <a href="/files/Help20111116.rar">使用帮助</a> <br>
+        &copy;2003-2013 nc.tju.edu.cn All Rights Reserved. </div>
+    </div>
+</div>
+</body>
+<script language="javascript">
+
+	var cook=getCookie("tju_login");
+
+	if(cook!=null)
+
+	{
+
+		var arr=cook.split("|");
+
+		document.form1.uname.value=arr[0];
+
+		document.form1.pass.value=arr[1];
+
+		document.form1.save_me.checked=true;
+
+	}
+
+	//document.getElementById("loginattach").style.left=((document.body.clientWidth-428)/2)+'px';
+
+	//document.getElementById("loginattach").style.top=((document.body.clientHeight+296)/2)+'px';
+
+</script>
+<script language="javascript">
+	var cook=getCookie("tju_login");
+
+	if(cook!=null)
+
+	{
+
+		var arr=cook.split("|");
+
+		document.form1.uname.value=arr[0];
+
+		document.form1.pass.value=arr[1];
+
+		document.form1.save_me.checked=true;
+
+	}
+
+	var u=document.location.search.substring(1);	
+	var is_online=1;
+	if(u!="")//解析URL
+	{
+		var arr1 = u.split("&");
+		var i=0;
+		for(i=0; i<arr1.length; i++)
+		{
+			if(arr1[i] == "")
+				continue;
+			var arr2 = arr1[i].split("=");
+			if(arr2[0] == "wlanacname")
+			{
+				document.form1.wlanacname.value=arr2[1];
+			}
+			else if(arr2[0] == "wlanuserip" || arr2[0] == "ip")
+			{
+				document.form1.user_ip.value=arr2[1];
+			}
+			else if(arr2[0] == "ssid")
+			{
+				document.form1.ssid.value=arr2[1];
+			}
+			else if(arr2[0] == "vlan")
+			{
+				document.form1.vlan.value=arr2[1];
+			}
+			else if(arr2[0] == "portal_ip")
+			{
+				document.form1.nas_ip.value=arr2[1];
+			}
+			else if(arr2[0] == "client_id" || arr2[0] == "mac")
+			{
+				document.form1.mac.value=arr2[1];
+			}
+			else if(arr2[0] == "wbaredirect" || arr2[0] == "userurl" || arr2[0] == "URL" || arr2[0] == "url")
+			{
+				document.form1.wbaredirect.value=arr2[1];
+				jump_to = arr2[1];
+			}		
+			else if(arr2[0] == "is_debug")
+			{
+				document.form1.is_debug.value=arr2[1];
+			}
+			else if(arr2[0] == "ac_type")
+			{
+				document.form1.ac_type.value=arr2[1];
+			}
+			else if(arr2[0] == "rad_type")
+			{
+				document.form1.rad_type.value=arr2[1];
+			}
+			else if(arr2[0] == "local_auth")
+			{
+				document.form1.local_auth.value=arr2[1];
+			}
+			else if(arr2[0] == "ac_id")
+			{
+				document.form1.ac_id.value=arr2[1];
+			}
+			else if(arr2[0] == "action")
+			{
+				is_online=0;
+				if(arr2[1] == "login_ok")
+				{
+					document.getElementById("tab_login").style.display="none";
+					document.getElementById("tab_login_ok").style.display="";
+					document.getElementById("bt_connect").style.display="none";
+					//检测用户状态
+					/*
+					var res = postData("/acct_msg.php","post","user_login_name="+document.form1.uname.value);
+					
+					if(res == "status_error")//显示帐期临近信息
+					{
+						//document.getElementById("acct_msg").innerHTML="<b>连接成功</b><br/><br/><font color=red>本月账期已近，请注意你的余额情况，以免因为余额不足影响你的使用。</font>";
+						alert("连接成功,账期已近，请注意余额情况，以免余额不足影响使用!");
+					}
+					else
+					{
+						//location="help.html"; //登录成功状态正常的用户跳转
+					}
+					*/
+				}
+				else
+				{
+					document.form1.action.value=arr2[1];						
+				}
+			}		
+		}	
+	}
+	
+	if(is_online == 1)
+	{
+		//get_user_info();
+	}
+</script>
+</html>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Center of Remote Sensing, Tianjin University</title>
+<link href="{dede:global.cfg_templets_skin/}/style/style.css" type="text/css" rel="stylesheet" />
+<link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script type="text/javascript">
+//弹出隐藏层
+function ShowDiv(show_div,bg_div){
+document.getElementById(show_div).style.display='block';
+document.getElementById(bg_div).style.display='block' ;
+var bgdiv = document.getElementById(bg_div);
+bgdiv.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+$("#"+bg_div).height($(document).height());
+};
+//关闭弹出层
+function CloseDiv(show_div,bg_div)
+{
+document.getElementById(show_div).style.display='none';
+document.getElementById(bg_div).style.display='none';
+};
+</script>
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/banner1.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+  $(function(){
+    $("a[_for]").mouseover(function(){
+      $(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+      $(this).addClass("thisclass").blur();
+      $("#"+$(this).attr("_for")).show();
+    });
+    $("a[_for=uc_member]").mouseover();
+    $("a[_for=flink_1]").mouseover();
+  });
+  
+  function CheckLogin(){
+    var taget_obj = document.getElementById('_userlogin');
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+    DedeXHTTP = null;
+  }
+-->
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}<div class="content">
+
+
+   <div class="clear"></div>
+   <div class="content_left">
+      <div class="left_top">
+         <div class="left_top_zuo">
+            <div id="fader">
+               <ul>
+                  <li><a href="" title=""><img src="{dede:global.cfg_templets_skin/}/images/01.jpg" width="372px" height="242px" alt="我也不知道这是什么玩意"></a></li>
+                  <li><a href="" title=""><img src="{dede:global.cfg_templets_skin/}/images/02.jpg" width="372px" height="242px" alt="这是火车"></a></li>
+                  <li><a href="" title=""><img src="{dede:global.cfg_templets_skin/}/images/03.jpg" width="372px" height="242px" alt="这是西红柿"></a></li>
+                  <li><a href="" title=""><img src="{dede:global.cfg_templets_skin/}/images/04.jpg" width="372px" height="242px" alt="这是奥巴马"></a></li>
+                  <li><a href="" title=""><img src="{dede:global.cfg_templets_skin/}/images/05.jpg" width="372px" height="242px" alt="这是桃子"></a></li>
+              </ul>
+            </div><!--fader(banner) end--> 
+          <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/banner2.js"></script>
+            <div class="scdt">
+               <h1>Note</h1>
+               <div class="intro">
+<a href="" title=""><img src="{dede:global.cfg_templets_skin/}/images/m5.jpg" width="100px" height="100px" alt="" /></a>
+                                      {dede:arclist typeid='22' limit='0,1' infolen='200' '}
+    <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+    <p>[field:info/]...<a href="[field:arcurl/]">[Detail]</a></p>
+    {/dede:arclist}
+
+               </div><!--intro end-->
+               <div class="list">
+                  <ul>
+
+  {dede:arclist titlelen='60' row='3' typeid='22'}
+      <li style="margin-left:30px;"><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="[field:arcurl /]">[field:title /]</a></li>
+      {/dede:arclist} 
+                  </ul>
+               </div><!--list end-->
+            </div><!--scdt end-->
+
+            
+         </div><!--top_left_zuo end-->
+</form>
+         <div class="left_top_you">
+            <div class="kydt">
+                <h1><span>科研动态</span><a class="more" href="{dede:global.cfg_cmsurl/}/a/yanjiudongtai/index.html" title="">更多>></a></h1>
+                <div class="clear"></div>
+                <div class="list">
+                  <ul>
+                     <li class="li1">
+                       {dede:arclist typeid='18' limit='0,1' infolen='300'}
+    <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+    <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+    {/dede:arclist}
+                     </li>
+                   </ul>
+                </div>
+            </div><!--hyyw end-->
+            <div class="xwzx">
+                <h1><span>新闻中心</span><a class="more" href="{dede:global.cfg_cmsurl/}/a/xinwenzhongxin/index.html" title="">更多>></a></h1>
+                <div class="clear"></div>
+                <div class="list">
+                  <ul>
+
+                     {dede:arclist titlelen='60' row='6' typeid='23'}
+      <li><span><img src="/templets/default/images/dian.png" width="5px" height="5px" alt="" /></span><a href="[field:arcurl /]">[field:title /]</a></li>
+      {/dede:arclist}
+                   </ul>
+                </div>
+            </div><!--hyfx end-->
+            
+      
+         </div><!--top_left_you end-->
+      </div><!--left_top end-->
+   </div><!--content_left end-->
+   <div class="content_right">
+      <div class="hyzxdt">
+                <h1><span>行业最新动态</span><a class="more" href="{dede:global.cfg_cmsurl/}/a/hangyedongtai/index.html" title="">更多>></a></h1>
+                <div class="clear"></div>
+                <div class="list" style="width: 238px; ">
+                  <ul style="width: 238px; ">
+                     <li class="li1">
+{dede:arclist typeid='24' limit='0,1' infolen='250' '}
+    <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+    <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
+    {/dede:arclist}
+                     </li>
+                   </ul>
+                </div>
+            </div>
+      <div class="yqlj">
+            <h1>友情链接</h1>
+               <div class="intro">
+                  <div class="connect" style="margin-left:40px;"><a href="http://www.twt.edu.cn" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tyt.jpg" alt="" /></a></div>
+                  <div class="connect" style="margin-left:40p;"><a href="http://www.tju.edu.cn" title="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjdx.jpg" alt="" /></a></div>
+                
+                </div>
+               </div><!--intro end-->     
+       </div><!--yqlj end-->
+   
+   </div><!--content_right end--> 
+   <div class="clear"></div><!--清除浮动-->
+  
+</div><!--content end-->
+
+<div class="footer">
+   <ul>
+       <div style="margin-left:250px;margin-top:5px;"><li class="li_left">地址：天津市南开区卫津路92路 | 邮编：300072</li></div>
+   </ul>
+</div><!--footer end-->
+</body>
+
+</html>
